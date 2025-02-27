@@ -1,0 +1,20 @@
+{% load static %}
+<div class="headerContainer">
+  <header className="header">
+    <a href="{% url 'home' %}"><img class ="header-logo" src="{% static 'img/logoImg.png' %}" /></a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+      <div class="dropdown-menu">
+        <div class="overlay"></div>
+        <ul class="dropdownlist">
+            <li  class="dropdownitem"><a class="dropdownlink" href="{% url 'about' %}">About</a></li>
+            <li  class="dropdownitem"><a class="dropdownlink" href="{% url 'portfolio' %}">Portfolio</a></li>
+            <li  class="dropdownitem"><a class="dropdownlink" href="{% url 'design' %}">Web Design</a></li>
+            <li  class="dropdownitem"><a class="dropdownlink" href="{% url 'development' %}">Web Development</a></li>
+            <li  class="dropdownitem"><a class="dropdownlink" href="{% url 'maintenance' %}">Website Maintenance</a></li>
+            <li  class="dropdownitem"><a class="dropdownlink" href="{% url 'seo' %}">Search Engine Optimization</a></li>
+        </ul>
+    </div>
+  </header>
+</div>

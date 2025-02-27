@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+   <section class="servicesContainer">
+        <h1 class="serviceTitle">Our Services</h1>
+        <div class="serviceIconsContainer">
+            <a href="{% url 'design' %}" class="serviceIconContainer">
+                <img src="{% static 'img/designicon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Web Design</p>
+            </a>
+            <a href="{% url 'development' %}" class="serviceIconContainer">
+                <img src="{% static 'img/developmenticon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Web Development</p>
+            </a>
+            <a href="{% url 'seo' %}" class="serviceIconContainer">
+                <img src="{% static 'img/seoicon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Seo</p>
+            </a>
+            <a href="{% url 'maintenance' %}" class="serviceIconContainer">
+                <img src="{% static 'img/maintenanceicon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Website Maintenance</p>
+            </a>
+        </div>
+    </section>
+    <section class="growConsultationContainer">
+        <div class="growContainer">
+            <h2 class="growTitle">We Build & Grow<br/> Solutions Together!</h2>
+            <p class="growText">Looking for expert help to determine and build the ideal web solution for your business?</p>
+            <div class="iconsContainer">
+                <img src="{% static 'img/connecticon.png' %}" class="growIcon"/>
+                <img src="{% static 'img/solutionImg.png' %}" class="growIcon"/>
+                <img src="{% static 'img/growthicon.png' %}" class="growIcon"/>
+            </div>
+        </div>
+        <div class="consultationContainer">
+            <a href="" class="freeConsultation">Click to call<br/>
+                for a free<br/> consultation.</a>
+        </div>
+    </section>
+    <section class="blogsSectionContainer">
+        <h1 class="blogTitle">Blogs</h1>
+        <div class="blogsContainer">
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/designicon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">The Art and Science of Web Design: Why Romsites is Your Go-To Solution!<a href="{% url 'design' %}" class="readMore">Read More</a></p>
+                </div>
+            </div>
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/developmenticon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">Web Development: Building High-Performance Websites with Romsites.<a href="{% url 'development' %}" class="readMore">Read More</a></p>     
+                </div>
+            </div>
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/seoicon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">SEO: How Romsites Optimizes Your Online Presence<a href="{% url 'seo' %}" class="readMore">Read More</a></p>
+                </div>
+            </div>
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/maintenanceicon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">Website Maintenance: Ensuring Your Website's Peak Performance with Romsites<a href="{% url 'maintenance' %}" class="readMore">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

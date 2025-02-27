@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <section class="ourMission">
+        <div class="missionContainer">
+            <h2 class="missionTitle">Our Mission</h2>
+            <p class="missionText">At Romsites, our mission is to empower businesses by providing cutting-edge, affordable, and effective website solutions that drive growth and success.
+                <br/>
+                Our goal is to create high-quality, user-friendly websites that not only captivate audiences but also perform exceptionally well in search engine rankings.
+                <br/>
+                 We are committed to leveraging the latest technologies and best practices to deliver fast, secure, and visually stunning websites that enhance our clients' online presence. 
+                 <br/>
+                 With a focus on customer satisfaction, we strive to exceed expectations and help businesses of all sizes thrive in the digital landscape.
+                </p>
+        </div>
+        <div class="statementContainer">
+            <h1 class="missionStatement"><span class="">We</span> <span class="">grow</span> together.</h1>
+        </div>
+    </section>
+    <section class="aboutUs">
+        <div class="whoContainer">
+            <h2 class="whoTitle">Who we are?</h2>
+            <p class="whoText">Romsites, founded with the vision of revolutionizing web development, has rapidly grown into a leading provider of website solutions for businesses of all sizes. 
+                <br/>
+                With a team of experienced professionals, Romsites leverages cutting-edge technologies and industry best practices to deliver exceptional web services.
+                <br/>
+                Our company is dedicated to creating high-quality, user-friendly websites that are optimized for search engines, ensuring maximum visibility and engagement.
+                <br/>
+                As a trusted partner, Romsites is committed to helping businesses enhance their online presence, improve customer experience, and drive growth through innovative and effective website solutions.</p>
+        </div>
+        <div class="whatContainer">
+            <div class="whatTitleTextContainer">
+            <h1 class="whatTitle">What we do?</h1>
+            <p class="whatText">At Romsites, we offer a full suite of website services to cater to the diverse needs of businesses. Our expertise spans web design, web development, SEO, and website maintenance, using industry-leading technologies to deliver exceptional results.
+                <br/>
+                Our web design service focuses on creating visually stunning and user-friendly websites that captivate your audience. We leverage tools like Figma for designing intuitive and responsive layouts. Our design process ensures that your website not only looks great but also provides an optimal user experience across all devices. From wireframes to final mockups, we work closely with you to bring your vision to life.
+                <br/>
+                At Romsites, we turn designs into fully functional websites using cutting-edge technologies. Our web development team is proficient in HTML, CSS, JavaScript, React.js, Django, and ASP.NET. Whether you need a simple website or a complex web application, our developers have the skills and expertise to deliver high-quality solutions. We focus on creating scalable, secure, and high-performance websites that meet your business needs.
+                <br/>
+                A beautiful website is meaningless if it can't be found by your target audience. Our SEO services ensure that your website ranks high in search engine results, driving organic traffic and increasing visibility. We utilize the latest SEO techniques, including keyword research, on-page optimization, link building, and content creation. Our goal is to improve your website's search engine performance, helping you reach more potential customers and achieve your business objectives.
+                <br/>
+                Keeping your website updated and running smoothly is crucial for maintaining its performance and security. Romsites offers comprehensive website maintenance services, including regular updates, security checks, backups, and performance optimization. Our team is always on hand to address any issues and ensure your website remains in top condition. With our maintenance service, you can focus on your business while we take care of your website.
+                <br/>
+                Romsites is committed to providing fast, effective, affordable, and high-quality website solutions. By leveraging state-of-the-art technologies and industry best practices, we deliver websites that not only meet but exceed your expectations. Our holistic approach ensures that all aspects of your online presence are taken care of, from design and development to SEO and ongoing maintenance.
+                <br/>
+                Choose Romsites and elevate your online presence with our comprehensive and tailored website services. Let us help you build a website that drives growth and success for your business.</p>
+            </div>
+            <a href="{% url 'services' %}" class="whatLink">Our Services</a>
+        </div>
+    </section>
+    <section class="reviewSectionContainer">
+        <h1 class="reviewTitle">Leave A Review</h1>
+        <div class="reviewsContainer">
+            <div class="reviewContainer">
+                {% if reviews %}
+                <div class="reviewInfo">
+                    <h3 class="reviewName">{{ reviews.0.name }}</h3>
+                    <div class="stars">
+                        {% for i in "12345" %}
+                            {% if forloop.counter <= reviews.0.rating %}
+                                <span class="starIcon filled">&#9733;</span>
+                            {% else %}
+                                <span class="starIcon">&#9734;</span>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    {% if reviews.0.rating >= 5 %}
+                        <p class="satisfaction">Satisfied</p>
+                    {% else %}
+                        <p class="satisfaction">Unsatisfied</p>
+                    {% endif %}
+                </div>
+                <div class="reviewTextContainer">
+                    <p class="reviewText">"{{ reviews.0.comment }}"</p>
+                </div>
+                {% else %}
+                <p class="noReviews">Be the first to leave a review!</p>
+                {% endif %}
+            </div>
+        </div>
+        <div class="leaveReviewContainer">
+            <h1 class="leaveReviewTitle">Your Review</h1>
+            <form method="post" class="reviewForm">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="reviewSubmit">Submit Review</button>
+            </form>
+        </div>
+    </section>
+</div>
+{% endblock %}
+</body>
+</html>

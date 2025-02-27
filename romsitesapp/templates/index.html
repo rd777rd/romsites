@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <section class="servicesContainer">
+        <h1 class="serviceTitle">Our Services</h1>
+        <div class="serviceIconsContainer">
+            <a href="{% url 'design' %}" class="serviceIconContainer">
+                <img src="{% static 'img/designicon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Web Design</p>
+            </a>
+            <a href="{% url 'development' %}" class="serviceIconContainer">
+                <img src="{% static 'img/developmenticon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Web Development</p>
+            </a>
+            <a href="{% url 'seo' %}" class="serviceIconContainer">
+                <img src="{% static 'img/seoicon.png' %}" class="serviceImg"/>
+                <p class="serviceName">SEO</p>
+            </a>
+            <a href="{% url 'maintenance' %}" class="serviceIconContainer">
+                <img src="{% static 'img/maintenanceicon.png' %}" class="serviceImg"/>
+                <p class="serviceName">Website Maintenance</p>
+            </a>
+        </div>
+    </section>
+    <section class="whyUsContainer">
+        <h1 class="whyTitle">Why Us?</h1>
+        <div class="whyTextContainer">
+            <div class="whyListContainer">
+                <ul class="whyList">
+                    <li class="whyItem">Fast</li>
+                    <li class="whyItem">Effective</li>
+                    <li class="whyItem">Affordable</li>
+                    <li class="whyItem">Reliable</li>
+                    <li class="whyItem">Quality</li>
+                </ul>
+            </div>
+            <div class="reasonContainer">
+                <p class="whyText">When it comes to finding a reliable, efficient, and affordable website solution provider, Romsites stands out as the top choice.
+                    <br/>
+                    Here's why:
+                    <br/>
+                    At Romsites, we understand that time is money. Our team of experts ensures that your website is up and running in record time, without compromising on quality. We utilize the latest technologies and best practices to deliver fast-loading, responsive websites that provide an exceptional user experience.
+                    <br/>
+                    A website is more than just a digital storefront; it's a powerful marketing tool. Romsites specializes in creating websites that not only look great but also perform exceptionally well. Our designs are optimized for search engines, ensuring your business ranks high in search results and attracts more potential customers. With Romsites, your website will be a key driver of business growth and success.
+                    <br/>
+                    Quality website solutions shouldn't break the bank. Romsites offers competitive pricing packages tailored to fit businesses of all sizes. Whether you're a startup or an established enterprise, you'll find our services to be cost-effective without sacrificing quality. We believe that every business deserves a great website, and we make it accessible for everyone.
+                    <br/>
+                    When you choose Romsites, you're choosing excellence. Our team of skilled professionals is dedicated to delivering top-notch websites that are visually appealing, functionally robust, and highly secure. We adhere to the highest standards of web development, ensuring your site is not only beautiful but also reliable and safe from potential threats.
+                    <br/>
+                    Romsites is the ultimate partner for businesses seeking fast, effective, affordable, and high-quality website solutions. Our commitment to excellence and customer satisfaction sets us apart from the competition. Join the ranks of successful businesses that have trusted Romsites to elevate their online presence. Choose Romsites and watch your business soar to new heights!
+                    <br/>
+                    Ready to take your business to the next level? Contact Romsites today and let's get started on your journey to digital success!</p>
+            </div>
+        </div>
+    </section>
+    <section class="blogsSectionContainer">
+        <div class="blogsContainer">
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/designicon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">The Art and Science of Web Design: Why Romsites is Your Go-To Solution!<a href="{% url 'design' %}" class="readMore">Read More</a></p>
+                </div>
+            </div>
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/developmenticon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">Web Development: Building High-Performance Websites with Romsites.<a href="{% url 'development' %}" class="readMore">Read More</a></p>   
+                </div>
+            </div>
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/seoicon.png' %}" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">SEO: How Romsites Optimizes Your Online Presence<a href="{% url 'seo' %}" class="readMore">Read More</a></p>
+                </div>
+            </div>
+            <div class="blogPost">
+                <div class="blogImgContainer">
+                    <img src="{% static 'img/maintenanceicon.png' %}" alt="Maintenance Icon" class="blogImg"/>
+                </div>
+                <div class="blogTextContainer">
+                    <p class="blogText">Website Maintenance: Ensuring Your Website's Peak Performance with Romsites<a href="{% url 'maintenance' %}" class="readMore">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

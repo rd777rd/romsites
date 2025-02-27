@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <section class="serviceBlogContainer">
+        <h1 class="blogsTitle">Website Maintenance</h1>
+        <p class="blogsText">Website maintenance is a crucial aspect of maintaining a successful online presence. At Romsites, we understand that keeping your website updated, secure, and performing at its best is essential for your business's growth and success. Our comprehensive website maintenance services are designed to ensure your site remains in top condition, providing a seamless and enjoyable experience for your visitors.
+            <br/>
+            Regular website maintenance involves a variety of tasks, from updating content and software to monitoring performance and security. At Romsites, we take a proactive approach to maintenance, addressing potential issues before they become problems. This includes regular updates to your website's content, ensuring it remains relevant and engaging for your audience. Fresh content not only keeps your visitors coming back but also helps improve your search engine rankings.
+            <br/>
+            Security is a top priority at Romsites. With the increasing number of cyber threats, it's essential to have robust security measures in place to protect your website and your users' information. Our team conducts regular security audits, identifying and addressing vulnerabilities to keep your site safe from potential threats. We also implement security patches and updates to ensure your website remains secure.
+            <br/>
+            Performance optimization is another key aspect of our website maintenance services. A slow-loading website can deter visitors and negatively impact your search engine rankings. Our team at Romsites monitors your website's performance, identifying and resolving issues that may affect its speed and responsiveness. By optimizing your site's performance, we ensure a smooth and enjoyable experience for your visitors.
+            <br/>
+            In addition to these essential tasks, our website maintenance services also include regular backups of your site. This ensures that in the event of a data loss or technical issue, your website can be quickly restored to its previous state. Our team at Romsites takes care of all the technical details, allowing you to focus on running your business without worrying about your website.
+            <br/>
+            At Romsites, we believe that a well-maintained website is a cornerstone of digital success. Our maintenance services are tailored to meet the unique needs of each client, ensuring that your website remains up-to-date, secure, and performing at its best. We work closely with you to understand your business goals and provide the support you need to achieve them.
+            <br/>
+            In conclusion, website maintenance is an essential part of any successful digital strategy. At Romsites, we are committed to providing top-notch maintenance services that ensure your website remains in optimal condition. Our proactive approach, combined with our expertise in the latest technologies and best practices, makes us the ideal partner for your website maintenance needs. Trust Romsites to keep your website running smoothly, so you can focus on what you do best, growing your business.</p>
+    </section>
+    <section class="processContainer">
+        <h1 class="processTitle">Our Process</h1>
+        <div class="stepIconsContainer">
+            <div class="stepIcon">
+                <p class="stepNumber">1</p>
+                <p class="stepText">Review</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">2</p>
+                <p class="stepText">Update</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">3</p>
+                <p class="stepText">Monitor</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">4</p>
+                <p class="stepText">Support</p>
+            </div>
+        </div>
+        <p class="processDescription">The website maintenance process starts with an Initial Assessment and Setup. We assess your website's current state, identifying areas for improvement and setting up maintenance protocols. This includes establishing backup schedules and security measures.
+            <br/>
+            Next, we move on to Regular Updates and Security Checks. We perform routine updates to your website's content, software, and security features. This ensures your site remains up-to-date, secure, and running smoothly.
+            <br/>
+            The third step is Performance Monitoring and Optimization. We continuously monitor your website's performance, addressing issues that may affect speed and responsiveness. This includes optimizing images, code, and server configurations.
+            <br/>
+            Finally, we proceed with Ongoing Support and Improvements. We provide ongoing support to address any technical issues or updates needed. This ensures your website remains in top condition and continues to meet your business goals.</p>
+    </section>    
+    <section class="hireButtonsContainer">
+        <div class="hireButtonContainer">
+            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        </div>
+        <div class="hireButtonContainer">
+            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        </div>
+    </section>
+    <section class="otherServicesContainer">
+        <h1 class="otherServiceTitle">Other Services</h1>
+        <div class="otherServiceButtonsContainer">
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'development' %}" class="otherServiceButton">Web Development</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'design' %}" class="otherServiceButton">Web Design</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'seo' %}" class="otherServiceButton">Search Engine Optimization</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

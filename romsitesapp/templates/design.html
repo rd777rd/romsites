@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <section class="serviceBlogContainer">
+        <h1 class="blogsTitle">Web Design</h1>
+        <p class="blogsText">
+            In today's digital age, a well-designed website is the cornerstone of any successful business. It's not just about having a visually appealing site; it's about creating an experience that resonates with your audience, drives engagement, and converts visitors into loyal customers. At Romsites, we pride ourselves on our ability to merge the art and science of web design to deliver exceptional results for our clients.
+            <br/>
+Web design is much more than just aesthetics. It's about creating a user experience that is intuitive, engaging, and aligned with your business goals. A well-designed website can enhance user experience, boost credibility, improve SEO rankings, and drive conversions. A clean, easy-to-navigate site ensures that users can find what they're looking for quickly and effortlessly. A professional, polished website instills trust and confidence in your audience. Search engines favor well-structured, mobile-friendly sites, helping you climb the rankings and attract more organic traffic. Thoughtfully placed calls-to-action and an optimized user journey can significantly increase your conversion rates.
+<br/>
+At Romsites, we understand that every business is unique, and so are its web design needs. Our approach is tailored to deliver bespoke solutions that align with your brand identity and business objectives. Our process begins with a deep dive into your business, target audience, and goals. We take the time to understand what makes your business tick and what your customers are looking for. This foundational understanding guides our entire design process.
+<br/>
+Using industry-leading tools like Figma, we create visually stunning and user-friendly designs that capture the essence of your brand. Our designers focus on creating layouts that are not only beautiful but also functional, ensuring a seamless user experience across all devices. Our proficient web development team, skilled in HTML, CSS, JavaScript, React.js, Django, and ASP.NET, turns these designs into fully functional websites. We prioritize performance, security, and scalability, ensuring your site can grow with your business.
+<br/>
+A great website is one that can be found. Our SEO experts work on optimizing your site's structure, content, and performance to ensure it ranks high on search engine results pages. From keyword research to on-page optimization, we cover all aspects to boost your visibility. The digital landscape is ever-evolving, and so should your website. Our website maintenance services ensure your site remains up-to-date, secure, and performing at its best. We regularly update your site with new features, security patches, and optimizations to keep it running smoothly.
+<br/>
+Romsites is more than just a web design company; we are your partners in digital success. Our commitment to excellence, combined with our expertise in cutting-edge technologies, ensures that we deliver top-notch web solutions tailored to your business needs. Whether you're looking to create a new website or revamp an existing one, Romsites is here to help you every step of the way. Elevate your online presence with Romsites' exceptional web design services. Let us help you create a website that not only looks great but also drives results.
+            </p>
+    </section>
+    <section class="processContainer">
+        <h1 class="processTitle">Our Process</h1>
+        <div class="stepIconsContainer">
+            <div class="stepIcon">
+                <p class="stepNumber">1</p>
+                <p class="stepText">Discovery</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">2</p>
+                <p class="stepText">Wireframing</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">3</p>
+                <p class="stepText">Design</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">4</p>
+                <p class="stepText">Handoff</p>
+            </div>
+        </div>
+        <p class="processDescription">The first step in our web design process is Discovery and Research. We begin by understanding your business, target audience, and goals. This involves in-depth discussions and research to gather all necessary information and inspiration.
+            <br/>
+            Next, we move on to Wireframing and Prototyping. We create wireframes and prototypes using tools like Figma to visualize the layout and structure of your website. This phase includes feedback and revisions to ensure alignment with your vision.
+            <br/>
+            The third step is Design Execution. Our designers craft high-fidelity designs, focusing on aesthetics, user experience, and responsiveness. This step includes multiple iterations and refinements based on your input.
+            <br/>
+            Finally, we proceed with Approval and Handoff. Once the design is finalized and approved, we prepare all design assets for handoff to the development team, ensuring a seamless transition.</p>
+    </section>    
+    <section class="hireButtonsContainer">
+        <div class="hireButtonContainer">
+            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        </div>
+        <div class="hireButtonContainer">
+            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        </div>
+    </section>
+    <section class="otherServicesContainer">
+        <h1 class="otherServiceTitle">Other Services</h1>
+        <div class="otherServiceButtonsContainer">
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'development' %}" class="otherServiceButton">Web Development</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'maintenance' %}" class="otherServiceButton">Website Mainetenance</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'seo' %}" class="otherServiceButton">Search Engine Optimization</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

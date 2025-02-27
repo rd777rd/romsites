@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <section class="serviceBlogContainer">
+        <h1 class="blogsTitle">Web Development</h1>
+        <p class="blogsText">Web development is at the heart of the digital world, driving innovation and growth across industries. At Romsites, we take pride in offering top-notch web development services that cater to the unique needs of businesses. Our commitment to excellence and our use of cutting-edge technologies set us apart as a leading web development company.
+            <br/>
+            Web development encompasses a wide range of activities, from creating simple static pages to developing complex web applications. At Romsites, we understand that each business has its own set of requirements, and we tailor our services to meet those specific needs. Our team of skilled developers is proficient in a variety of programming languages and frameworks, including HTML, CSS, JavaScript, React.js, Django, and ASP.NET. This diverse skill set allows us to create highly functional, scalable, and secure websites that drive business success.
+            <br/>
+            One of the key aspects of web development at Romsites is our focus on performance. We know that a slow-loading website can deter potential customers and hurt your search engine rankings. That's why we prioritize optimizing the performance of your site, ensuring fast load times and smooth navigation. Our developers implement best practices in coding and utilize performance optimization tools to deliver websites that perform exceptionally well.
+            <br/>
+            Security is another critical aspect of web development, and at Romsites, we take it very seriously. With the increasing number of cyber threats, it's essential to have a secure website that protects your data and your users' information. Our developers employ robust security measures, including encryption, secure coding practices, and regular security audits, to ensure your website is safe from potential threats.
+            <br/>
+            In addition to performance and security, we also emphasize the importance of user experience (UX) in web development. A well-designed website should be intuitive and easy to navigate, providing a seamless experience for users. Our team works closely with our web designers to create websites that are not only visually appealing but also user-friendly. We focus on creating responsive designs that work flawlessly across different devices and screen sizes, enhancing the overall user experience.
+            <br/>
+            Search engine optimization (SEO) is integral to our web development process. A well-optimized website can significantly improve your search engine rankings, driving organic traffic and increasing your online visibility. Our SEO experts work in tandem with our developers to ensure your website is optimized for search engines from the ground up. This includes implementing clean code, optimizing page load times, and incorporating relevant keywords and metadata.
+            <br/>
+            At Romsites, our mission is to empower businesses by providing comprehensive web development services that drive growth and success. We are committed to delivering high-quality, custom web solutions that meet your business needs and exceed your expectations. Whether you need a simple website or a complex web application, our team has the expertise and experience to bring your vision to life.
+            <br/>
+            Choose Romsites for your web development needs and experience the difference that our dedication to excellence and innovation can make. Let us help you build a website that not only looks great but also performs exceptionally well, driving your business towards digital success.
+        </p>
+    </section>
+    <section class="processContainer">
+        <h1 class="processTitle">Our Process</h1>
+        <div class="stepIconsContainer">
+            <div class="stepIcon">
+                <p class="stepNumber">1</p>
+                <p class="stepText">Plan</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">2</p>
+                <p class="stepText">Develop</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">3</p>
+                <p class="stepText">Test</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">4</p>
+                <p class="stepText">Deploy</p>
+            </div>
+        </div>
+        <p class="processDescription">The web development process starts with Planning and Requirements Gathering. We define the project's scope, objectives, and requirements. This involves detailed planning sessions to ensure we understand all technical and functional needs.
+            <br/>
+            Following this, we enter the Development and Coding phase. Our skilled developers build the website using technologies like HTML, CSS, JavaScript, React.js, Django, and ASP.NET. We follow best practices and coding standards to ensure high-quality code.
+            <br/>
+            The third step is Testing and Quality Assurance. We rigorously test the website for functionality, performance, and security. This phase includes unit testing, integration testing, and user acceptance testing (UAT).
+            <br/>
+            Finally, we proceed with Deployment and Launch. After thorough testing and approval, we deploy the website to the production environment. We provide post-launch support to address any issues and ensure a smooth go-live.</p>
+    </section>    
+    <section class="hireButtonsContainer">
+        <div class="hireButtonContainer">
+            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        </div>
+        <div class="hireButtonContainer">
+            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        </div>
+    </section>
+    <section class="otherServicesContainer">
+        <h1 class="otherServiceTitle">Other Services</h1>
+        <div class="otherServiceButtonsContainer">
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'design' %}" class="otherServiceButton">Web Design</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'maintenance' %}" class="otherServiceButton">Website Mainetenance</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'seo' %}" class="otherServiceButton">Search Engine Optimization</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

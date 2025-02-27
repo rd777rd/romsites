@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <section class="serviceBlogContainer">
+        <h1 class="blogsTitle">Search Engine Optimization</h1>
+        <p class="blogsText">Search Engine Optimization (SEO) is a vital part of digital marketing that can significantly boost your online presence. At Romsites, we understand the importance of SEO and its potential to drive more traffic to your website, increase your visibility, and ultimately, grow your business. Our unique approach to SEO makes us a leading provider of effective SEO services.
+            <br/>
+            SEO is all about making your website more appealing to search engines like Google and Bing. When done right, it helps your website show up higher in search engine results, making it easier for potential customers to find you. At Romsites, we focus on both on-page and off-page optimization to get the best results.
+            <br/>
+            On-page SEO involves optimizing the content and structure of your website. This includes using the right keywords, optimizing meta tags, creating high-quality content, and ensuring your site is mobile-friendly. At Romsites, we use advanced tools to find the keywords your target audience is searching for. We then incorporate these keywords into your content, meta tags, and headings, making your website both relevant and engaging.
+            <br/>
+            Creating quality content is a key part of on-page SEO. Great content not only attracts visitors but also keeps them on your site. Our team of skilled writers at Romsites creates engaging and informative content that resonates with your audience and encourages them to take action. From blog posts and articles to product descriptions and landing pages, we craft content that boosts your SEO efforts and drives organic traffic.
+            <br/>
+            Off-page SEO focuses on activities outside your website that can influence its rankings. This includes building high-quality backlinks, social media marketing, and managing your online reputation. At Romsites, we use effective link-building strategies to secure backlinks from reputable websites that enhance your site's authority and credibility. We also leverage social media to increase your online presence, engage with your audience, and drive traffic to your website.
+            <br/>
+            Technical SEO involves optimizing the technical aspects of your website, like site speed, mobile-friendliness, and how easily search engines can crawl your site. Our developers make sure your site is fast, responsive, and easy for search engines to navigate. By addressing these technical factors, we enhance your site's overall performance and improve its search engine rankings.
+            <br/>
+            At Romsites, our SEO services are tailored to meet the unique needs of each client. We start with a comprehensive SEO audit to analyze your website's current performance and identify areas for improvement. Based on our findings, we develop a customized SEO strategy that aligns with your business goals. Our goal is to deliver measurable results, helping you achieve higher rankings, increased traffic, and greater visibility.
+            <br/>
+            In conclusion, SEO is an essential part of any successful digital marketing strategy. At Romsites, we are committed to providing top-notch SEO services that drive growth and success for our clients. Our unique approach, combined with our expertise in best practices, ensures that your website stands out in the crowded digital landscape. Trust Romsites to elevate your online presence with our comprehensive and effective SEO solutions.
+        </p>
+    </section>
+    <section class="processContainer">
+        <h1 class="processTitle">Our Process</h1>
+        <div class="stepIconsContainer">
+            <div class="stepIcon">
+                <p class="stepNumber">1</p>
+                <p class="stepText">Audit</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">2</p>
+                <p class="stepText">Research</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">3</p>
+                <p class="stepText">Optimize</p>
+            </div>
+            <div class="stepIcon">
+                <p class="stepNumber">4</p>
+                <p class="stepText">Track</p>
+            </div>
+        </div>
+        <p class="processDescription">Our SEO process begins with an SEO Audit and Analysis. We start with a comprehensive audit of your website to identify strengths, weaknesses, and opportunities. This includes analyzing site structure, content, and current SEO performance.
+            Next, we move on to Keyword Research and Strategy. We conduct thorough keyword research to identify the most relevant and high-impact keywords for your business. We develop a tailored SEO strategy based on these findings.            
+            The third step is On-Page and Off-Page Optimization. We optimize your website's content, meta tags, and structure for target keywords. This also includes building high-quality backlinks and enhancing your online presence through social media and other channels.          
+            Finally, we proceed with Monitoring and Reporting. We continuously monitor your website's performance and provide regular reports on key SEO metrics. This allows us to track progress, make data-driven adjustments, and ensure ongoing improvement.</p>
+    </section>    
+    <section class="hireButtonsContainer">
+        <div class="hireButtonContainer">
+            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        </div>
+        <div class="hireButtonContainer">
+            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        </div>
+    </section>
+    <section class="otherServicesContainer">
+        <h1 class="otherServiceTitle">Other Services</h1>
+        <div class="otherServiceButtonsContainer">
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'design' %}" class="otherServiceButton">Web Design</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'development' %}" class="otherServiceButton">Web Development</a>
+            </div>
+            <div class=otherServiceButtonContainer>
+                <a href="{% url 'maintenance' %}" class="otherServiceButton">Website Mainetenance</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
+</body>
+</html>

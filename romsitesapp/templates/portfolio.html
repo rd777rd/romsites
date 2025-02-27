@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load review_filters %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+{% block content %}
+<div class="pageContainer">
+    <h1 class="portfolioTitle">Our Work</h1>
+    <section class="projectsContainer">
+        <div class="projectContainer">
+            <div class="projectImgContainer">
+                <img src="{% static 'img/smallscapes.png' %}" class="projectImg"/>
+            </div>
+            <div class="projectTextContainer">
+                <h1 class="projectTitle">Smallscapes</h1>
+                <p class="projectText">A website that we designed and developed for a client in the landscaping industry.</p>
+            </div>
+        </div>
+        <div class="projectContainer">
+            <div class="projectImgContainer">
+                <img src="{% static 'img/invoices.png' %}" class="projectImg"/>
+            </div>
+            <div class="projectTextContainer">
+                <h1 class="projectTitle">Invoice System</h1>
+                <p class="projectText">An invoice system web app we designed and developed.</p>
+            </div>
+        </div>
+    </section>
+    <h1 class="clientReviewTitle">Client Reviews</h1>
+    <section class="multipleReviewsContainer">
+        {% for review in reviews %}
+        <div class="reviewContainer">
+        <div class="reviewInfo">
+            <h3 class="reviewName">{{ review.name }}</h3>
+            <div class="stars">
+                {% for i in "12345" %}
+                            {% if forloop.counter <= review.rating %}
+                            <span class="starIcon filled">&#9733;</span>
+                            {% else %}
+                            <span class="starIcon">&#9734;</span>
+                            {% endif %}
+                        {% endfor %}
+            </div>
+            {% if review.rating >= 3 %}
+                        <p class="satisfaction">Satisfied</p>
+                    {% else %}
+                        <p class="satisfaction">Unsatisfied</p>
+                    {% endif %}
+        </div>
+        <div class="reviewTextContainer">
+            <p class="reviewText">{{ review.comment }}</p>
+        </div>
+        </div>
+        {% endfor %}
+
+
+    </section>
+</div>
+
+
+{% endblock %}
+
+</body>
+</html>

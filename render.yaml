@@ -1,0 +1,9 @@
+services:
+  -type: web
+  name: romsitesproject
+  env: python
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn romsitesproject.wsgi:application
+  staticFiles:
+    -baseDirectory: static
+    servePath: /
