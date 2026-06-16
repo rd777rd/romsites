@@ -1,1 +1,20 @@
-
+[
+  {
+    "id": "1",
+    "name": "Sarah Miller",
+    "rating": 5,
+    "comment": "Romsites delivered our landscaping layout and invoice system incredibly fast. Our clients love the simplicity. Highly recommend for any Indiana business seeking custom development!"
+  },
+  {
+    "id": "2",
+    "name": "Marcus Thompson",
+    "rating": 5,
+    "comment": "Exceptional local SEO services! Our Indianapolis tree care business tripled its inbound calls within months. A absolute game changer for our operations."
+  },
+  {
+    "id": "3",
+    "name": "David Garret",
+    "rating": 5,
+    "comment": "Their database architecture and customer portals are top tier. They optimized our laggy legacy system, speeding up loading times by nearly 400%."
+  }
+]
