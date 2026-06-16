@@ -99,9 +99,20 @@ def delete_review_view(request, review_id):
     if not review:
         return redirect('portfolio')
         
+    is_admin = request.user.is_authenticated and request.user.is_staff
+    
     if request.method == 'POST':
+        if not is_admin:
+            return render(request, 'delete_review.html', {
+                'review': review,
+                'is_admin': False,
+                'error': 'Access Denied: Admin authentication is required to delete records.'
+            })
         reviews = [r for r in reviews if r['id'] != str(review_id)]
         save_reviews(reviews)
         return redirect('portfolio')
         
-    return render(request, 'delete_review.html', {'review': review})
+    return render(request, 'delete_review.html', {
+        'review': review,
+        'is_admin': is_admin
+    })
