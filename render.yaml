@@ -1,9 +1,32 @@
+# Render Infrastructure as Code (Blueprint Specification)
+# Learn more at https://render.com/docs/blueprints
 services:
-  -type: web
-  name: romsitesproject
-  env: python
-  buildCommand: pip install -r requirements.txt
-  startCommand: gunicorn romsitesproject.wsgi:application
-  staticFiles:
-    -baseDirectory: static
-    servePath: /
+  # Route A: Fully-Bundled High-Performance Node & Express Web Server
+  - type: web
+    name: romsites-node-service
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+
+  # Route B: Direct Django Python Backend Web Service
+  - type: web
+    name: romsites-django-service
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate
+    startCommand: gunicorn romsitesproject.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.8
+      - key: DJANGO_SETTINGS_MODULE
+        value: romsitesproject.settings
+      - key: DJANGO_DEBUG
+        value: False
+      - key: DJANGO_SECRET_KEY
+        generateValue: true

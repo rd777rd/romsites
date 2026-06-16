@@ -5,7 +5,7 @@ import nunjucks from "nunjucks";
 
 // Initializing the server app
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
 // URL encoding parser & JSON parse support
 app.use(express.urlencoded({ extended: true }));
