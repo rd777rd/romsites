@@ -1,88 +1,416 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
+
 {% block content %}
-<div class="pageContainer">
-    <section class="serviceBlogContainer">
-        <h1 class="blogsTitle">Web Development</h1>
-        <p class="blogsText">Web development is at the heart of the digital world, driving innovation and growth across industries. At Romsites, we take pride in offering top-notch web development services that cater to the unique needs of businesses. Our commitment to excellence and our use of cutting-edge technologies set us apart as a leading web development company.
-            <br/>
-            Web development encompasses a wide range of activities, from creating simple static pages to developing complex web applications. At Romsites, we understand that each business has its own set of requirements, and we tailor our services to meet those specific needs. Our team of skilled developers is proficient in a variety of programming languages and frameworks, including HTML, CSS, JavaScript, React.js, Django, and ASP.NET. This diverse skill set allows us to create highly functional, scalable, and secure websites that drive business success.
-            <br/>
-            One of the key aspects of web development at Romsites is our focus on performance. We know that a slow-loading website can deter potential customers and hurt your search engine rankings. That's why we prioritize optimizing the performance of your site, ensuring fast load times and smooth navigation. Our developers implement best practices in coding and utilize performance optimization tools to deliver websites that perform exceptionally well.
-            <br/>
-            Security is another critical aspect of web development, and at Romsites, we take it very seriously. With the increasing number of cyber threats, it's essential to have a secure website that protects your data and your users' information. Our developers employ robust security measures, including encryption, secure coding practices, and regular security audits, to ensure your website is safe from potential threats.
-            <br/>
-            In addition to performance and security, we also emphasize the importance of user experience (UX) in web development. A well-designed website should be intuitive and easy to navigate, providing a seamless experience for users. Our team works closely with our web designers to create websites that are not only visually appealing but also user-friendly. We focus on creating responsive designs that work flawlessly across different devices and screen sizes, enhancing the overall user experience.
-            <br/>
-            Search engine optimization (SEO) is integral to our web development process. A well-optimized website can significantly improve your search engine rankings, driving organic traffic and increasing your online visibility. Our SEO experts work in tandem with our developers to ensure your website is optimized for search engines from the ground up. This includes implementing clean code, optimizing page load times, and incorporating relevant keywords and metadata.
-            <br/>
-            At Romsites, our mission is to empower businesses by providing comprehensive web development services that drive growth and success. We are committed to delivering high-quality, custom web solutions that meet your business needs and exceed your expectations. Whether you need a simple website or a complex web application, our team has the expertise and experience to bring your vision to life.
-            <br/>
-            Choose Romsites for your web development needs and experience the difference that our dedication to excellence and innovation can make. Let us help you build a website that not only looks great but also performs exceptionally well, driving your business towards digital success.
+<div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 z-10">
+
+  <!-- Core blog content -->
+  <article class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative mb-16 animate-fade-in text-left">
+    <div class="space-y-4">
+      <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-blue-400">
+        <i class="fa-solid fa-code"></i> Engineering Service Detail
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+        Building High-Performance Full-Stack Applications
+      </h1>
+
+      <!-- Metadata -->
+      <div class="flex items-center space-x-6 text-xs font-mono text-slate-500 border-b border-slate-800 pb-4 pt-1">
+        <span>Published: June 2026</span>
+        <span>Author: ROMSITES Backend Engineer</span>
+        <span>Read Time: 6 min</span>
+      </div>
+
+      <!-- Long-form text content -->
+      <div class="text-xs sm:text-sm text-slate-400 leading-relaxed space-y-4 pt-4">
+        <p>At the center of any highly-scalable enterprise is robust backend engineering. At ROMSITES, we pride ourselves on delivering custom, hand-crafted full-stack architectures. A slow or poorly written website repels target prospects, hurts client retention, and drains active conversion rates.</p>
+        
+        <p>By using modern, stable scripting standards coupled with robust server frameworks like Django, we create secure, high-density applications designed for high performance. Unlike ordinary agencies that depend on bloated templates and heavy database dependencies, we build lean ecosystems that scale with ease.</p>
+
+        <p class="border-l-2 border-blue-500 pl-4 py-1 italic font-medium text-slate-300 bg-blue-500/5 rounded-r">
+          "The fastest code is the code that never runs." — We optimize server execution pathways, leverage clean data relations, and write pixel-perfect, secure code modules to ensure maximum uptime.
         </p>
-    </section>
-    <section class="processContainer">
-        <h1 class="processTitle">Our Process</h1>
-        <div class="stepIconsContainer">
-            <div class="stepIcon">
-                <p class="stepNumber">1</p>
-                <p class="stepText">Plan</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">2</p>
-                <p class="stepText">Develop</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">3</p>
-                <p class="stepText">Test</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">4</p>
-                <p class="stepText">Deploy</p>
-            </div>
+
+        <p>Security is another critical pillar. With continuous cyber threats targeting small to mid-sized operations, we employ modern injection defenses, encrypted sessions, strict cross-site request preventions, and automated backups. Whether you need a simple landing page or an interactive database invoice portal, our advanced engineering lab is equipped to deploy high-grade solutions.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Process block -->
+  <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl text-center mb-16">
+    <h2 class="text-xs font-extrabold uppercase text-blue-400 tracking-widest mb-2">Our Process</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-10">Bespoke Software Engineering Lifecycle</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 relative">
+      
+      <!-- Step 1 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-blue-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-blue-500/40 transition-colors">
+          1
         </div>
-        <p class="processDescription">The web development process starts with Planning and Requirements Gathering. We define the project's scope, objectives, and requirements. This involves detailed planning sessions to ensure we understand all technical and functional needs.
-            <br/>
-            Following this, we enter the Development and Coding phase. Our skilled developers build the website using technologies like HTML, CSS, JavaScript, React.js, Django, and ASP.NET. We follow best practices and coding standards to ensure high-quality code.
-            <br/>
-            The third step is Testing and Quality Assurance. We rigorously test the website for functionality, performance, and security. This phase includes unit testing, integration testing, and user acceptance testing (UAT).
-            <br/>
-            Finally, we proceed with Deployment and Launch. After thorough testing and approval, we deploy the website to the production environment. We provide post-launch support to address any issues and ensure a smooth go-live.</p>
-    </section>    
-    <section class="hireButtonsContainer">
-        <div class="hireButtonContainer">
-            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Plan</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Evaluating data models and functional pipeline specifications.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-blue-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-blue-500/40 transition-colors">
+          2
         </div>
-        <div class="hireButtonContainer">
-            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Develop</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Writing compliant HTML tags, custom layout CSS, and Django models.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-blue-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-blue-500/40 transition-colors">
+          3
         </div>
-    </section>
-    <section class="otherServicesContainer">
-        <h1 class="otherServiceTitle">Other Services</h1>
-        <div class="otherServiceButtonsContainer">
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'design' %}" class="otherServiceButton">Web Design</a>
-            </div>
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'maintenance' %}" class="otherServiceButton">Website Mainetenance</a>
-            </div>
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'seo' %}" class="otherServiceButton">Search Engine Optimization</a>
-            </div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Test</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Evaluating page load speeds, database integrations, and mobile layouts.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-blue-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-blue-500/40 transition-colors">
+          4
         </div>
-    </section>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Deploy</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Launching your clean repository to cloud hosting environments.</p>
+      </div>
+
+    </div>
+
+    <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed border-t border-slate-800/80 pt-6">
+      Our developers maintain clean documentation and code version control, ensuring smooth long-term support and rapid feature expansions as your business scales.
+    </p>
+  </section>
+
+  <!-- DEVELOPMENT QUOTE CALCULATOR MODULE -->
+  <section id="dev-quote-calculator" class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative mb-16 text-left">
+    <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-blue-500/10 blur-[80px] pointer-events-none select-none"></div>
+    <div class="space-y-4">
+      <div class="inline-flex items-center space-x-2 bg-blue-500/10 border border-blue-500/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-blue-400">
+        <i class="fa-solid fa-calculator"></i> Full-Stack Budget Builder
+      </div>
+
+      <h3 class="text-2xl font-extrabold text-white leading-tight">
+        Model Your Engineering Budget
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-400">
+        Select your required system architecture and advanced integration modules below to calculate a robust web engineering pricing estimate.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Attributes selectors -->
+        <div class="space-y-6">
+          <!-- Architecture Scope Select -->
+          <div class="space-y-2">
+            <label for="dev-architecture" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">System Architecture</label>
+            <select id="dev-architecture" onchange="calculateDevQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500 outline-none transition-all cursor-pointer">
+              <option value="1800" data-label="React Client-Side SPA (Node + Vite)" selected>React Client-Side SPA (Node + Vite) — $1,800</option>
+              <option value="3500" data-label="Django (Python) + React Full-Stack Database System">Django (Python) + React Full-Stack Database System — $3,500</option>
+              <option value="5800" data-label="Advanced Django + React Multi-Tenant SaaS Platform">Advanced Django + React Multi-Tenant SaaS Platform — $5,800</option>
+            </select>
+          </div>
+
+          <!-- Authentication Specialty Select -->
+          <div class="space-y-2">
+            <label for="dev-auth-method" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Authentication & Security Protocol</label>
+            <select id="dev-auth-method" onchange="calculateDevQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500 outline-none transition-all cursor-pointer">
+              <option value="none" data-cost="0" data-label="No Authentication Needed" selected>None (Public Application, No Login Required)</option>
+              <option value="session" data-cost="400" data-label="Traditional Session-Based Cookie Auth (Secure Django Sessions)">Session-Based Cookies (Traditional Django Auth) — $400</option>
+              <option value="jwt" data-cost="550" data-label="Token-Based JWT Auth (Secure Access/Refresh Tokens for React SPA)">Token-Based JWT Auth (Secure OAuth/JWT Tokens) — $550</option>
+              <option value="social" data-cost="750" data-label="Social OAuth SSO (Google / GitHub / Facebook profiles)">Social OAuth SSO (Google, GitHub, etc.) — $750</option>
+              <option value="oauth2" data-cost="800" data-label="OAuth2 Server Protocol (Custom secure server-to-server exchanges)">OAuth2 Server-to-Server Protocol — $800</option>
+              <option value="mfa" data-cost="950" data-label="Multi-Factor Authentication (MFA/2FA via Authenticator Web Apps or OTP)">Multi-Factor Authentication (Django + React 2FA/MFA) — $950</option>
+            </select>
+          </div>
+
+          <!-- Addons grid -->
+          <div class="space-y-2">
+            <label class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Engineering Add-Ons</label>
+            <div class="space-y-3">
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-dev-stripe" onchange="calculateDevQuote()" class="rounded bg-slate-950 border-slate-800 text-blue-500 focus:ring-blue-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">Stripe Payment Gateway Integration</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Full checkout ledger flows, merchant hooks, and invoices (+$800)</span>
+                </div>
+              </label>
+
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-dev-twilio" onchange="calculateDevQuote()" class="rounded bg-slate-950 border-slate-800 text-blue-500 focus:ring-blue-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">SMS / Email Notification Pipelines</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Immediate customer auto-alerts using Twilio / SendGrid APIs (+$450)</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Personalized Customization Additions -->
+          <div class="border-t border-slate-850 pt-4 space-y-4">
+            <!-- Custom API Integrations -->
+            <div class="space-y-2">
+              <label for="dev-apis" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider flex justify-between">
+                <span>Personalized API Connections</span> 
+                <span id="dev-apis-val" class="font-mono text-blue-400 font-black">0 APIs</span>
+              </label>
+              <div class="flex items-center space-x-4">
+                <input type="range" id="dev-apis" min="0" max="8" value="0" oninput="calculateDevQuote()" class="w-full accent-blue-500 bg-slate-950 border border-slate-800 h-2 rounded-lg cursor-pointer">
+                <span class="text-xs font-mono font-bold text-slate-500 whitespace-nowrap">+$150/ea</span>
+              </div>
+            </div>
+            
+            <!-- Database Engine Pick -->
+            <div class="space-y-2">
+              <label for="dev-database" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Database Engine Preferences</label>
+              <select id="dev-database" onchange="calculateDevQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500 outline-none transition-all cursor-pointer">
+                <option value="PostgreSQL (Durable Cloud SQL)" selected>PostgreSQL (Cloud SQL Relational Standard)</option>
+                <option value="Firebase Firestore (JSON NoSQL)">Firebase Firestore NoSQL (Real-time Cloud Sync)</option>
+                <option value="SQLite local assets">SQLite Embedded (Client-only / Low memory footprint)</option>
+                <option value="Supabase Managed DB">Supabase Managed Postgres (Serverless DB Platform)</option>
+              </select>
+            </div>
+
+            <!-- Deployment Target Selector -->
+            <div class="space-y-2">
+              <label for="dev-deploy-platform" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Target Cloud Deployment Platform</label>
+              <select id="dev-deploy-platform" onchange="calculateDevQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500 outline-none transition-all cursor-pointer">
+                <option value="Static Web Host (Vercel/Netlify Standard Base)" data-cost="0" selected>Static Web Host (Vercel/Netlify Standard Base) — Included</option>
+                <option value="Render Cloud Platform (Container App Service)" data-cost="150">Render Cloud Platform (Container App Service) — $150</option>
+                <option value="Heroku Platform PaaS (Dynos + Addon Database)" data-cost="200">Heroku Platform PaaS (Dynos + Addon Database) — $200</option>
+                <option value="AWS Enterprise Cloud (ECS, VPC, and RDS DB Stack)" data-cost="550">AWS Enterprise Cloud (ECS, VPC, and RDS DB Stack) — $550</option>
+              </select>
+            </div>
+
+            <!-- Custom Engineering Specifications -->
+            <div class="space-y-2">
+              <label for="dev-notes" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Custom Technical Requirements</label>
+              <textarea id="dev-notes" oninput="calculateDevQuote()" placeholder="e.g. Must integrate QuickBooks API, include role-based workspace permissions, or process custom CSV files..." class="w-full min-h-[60px] max-h-[140px] px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-semibold focus:border-blue-500/60 focus:ring-1 focus:ring-blue-500 outline-none transition-all resize-none" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Render visual estimation output -->
+        <div class="bg-slate-950/80 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between h-full space-y-6">
+          <div class="space-y-4">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-blue-400">ROMSITES Production Guarantee</span>
+            <div class="border-b border-slate-905 pb-4">
+              <span class="text-[9px] uppercase font-bold text-slate-500 font-mono">Estimated Investment</span>
+              <div id="dev-display-price" class="text-4xl font-black text-white mt-1">$1,800</div>
+              <span class="text-[10px] font-semibold text-slate-400 block mt-1">One-time engineering cost. 100% intellectual handoff.</span>
+            </div>
+            
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="flex justify-between">
+                <span>Production Cycles:</span>
+                <span id="dev-display-duration" class="font-bold text-slate-200">14 to 28 Business Days</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Database Engine:</span>
+                <span id="dev-display-db" class="font-bold text-blue-400">PostgreSQL</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Security & Auth:</span>
+                <span id="dev-display-auth" class="font-bold text-blue-400">None</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Deployment Cloud:</span>
+                <span id="dev-display-deploy" class="font-bold text-slate-350">Vercel/Netlify</span>
+              </div>
+              <div class="flex justify-between">
+                <span>API Connections:</span>
+                <span id="dev-display-apis" class="font-bold text-slate-200">0 Custom APIs</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Linter Alignment:</span>
+                <span class="font-bold text-slate-200">Precompiled TypeScript</span>
+              </div>
+            </div>
+          </div>
+
+          <a id="dev-quote-btn" href="mailto:romsitesllc@gmail.com?subject=ROMSITES Engineering Quote" class="w-full py-3.5 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-450 hover:to-indigo-550 rounded-xl text-white text-xs font-bold uppercase tracking-wider text-center shadow-lg transition-transform block">
+            <i class="fa-regular fa-envelope mr-1"></i> Retrieve Technical Proposal
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function calculateDevQuote() {
+      const selectEl = document.getElementById('dev-architecture');
+      const baseCost = parseInt(selectEl.value);
+      const label = selectEl.options[selectEl.selectedIndex].getAttribute('data-label');
+      
+      // Personalized APIs range
+      const apisInput = document.getElementById('dev-apis');
+      const apiCount = parseInt(apisInput.value) || 0;
+      document.getElementById('dev-apis-val').innerText = `${apiCount} API${apiCount === 1 ? '' : 's'}`;
+      const apisCost = apiCount * 150;
+
+      // Database picker
+      const dbEl = document.getElementById('dev-database');
+      const selectedDb = dbEl.value;
+      document.getElementById('dev-display-db').innerText = selectedDb.split(' (')[0].split(' NoSQL')[0];
+
+      // Authentication Picker
+      const authEl = document.getElementById('dev-auth-method');
+      const selectedAuth = authEl.value;
+      const authOption = authEl.options[authEl.selectedIndex];
+      const authCost = parseInt(authOption.getAttribute('data-cost')) || 0;
+      const authLabel = authOption.getAttribute('data-label');
+      document.getElementById('dev-display-auth').innerText = authOption.text.split(' —')[0].split(' (')[0];
+
+      // Deployment Platform Picker
+      const deployEl = document.getElementById('dev-deploy-platform');
+      const selectedDeploy = deployEl.value;
+      const deployOption = deployEl.options[deployEl.selectedIndex];
+      const deployCost = parseInt(deployOption.getAttribute('data-cost')) || 0;
+      const deployLabel = deployOption.getAttribute('data-label');
+      document.getElementById('dev-display-deploy').innerText = deployOption.text.split(' Platform')[0].split(' Enterprise')[0].split(' Cloud')[0].split(' —')[0];
+
+      // Custom dev notes
+      const devNotes = document.getElementById('dev-notes').value.trim();
+
+      let addons = [];
+      let total = baseCost + apisCost + authCost + deployCost;
+      
+      // Dynamic delivery duration calculation
+      let minDays = 10;
+      let maxDays = 15;
+      if (baseCost === 3500) {
+        minDays = 15;
+        maxDays = 25;
+      } else if (baseCost === 5800) {
+        minDays = 25;
+        maxDays = 40;
+      }
+      
+      // Additional APIs logical timing impact
+      minDays += apiCount * 2;
+      maxDays += apiCount * 3;
+      
+      // Database engine logical timing impact
+      if (selectedDb.indexOf("Cloud SQL") !== -1 || selectedDb.indexOf("PostgreSQL") !== -1) {
+        minDays += 2;
+        maxDays += 3;
+      } else if (selectedDb.indexOf("Firebase") !== -1 || selectedDb.indexOf("Supabase") !== -1) {
+        minDays += 1;
+        maxDays += 2;
+      }
+
+      // Authentication protocol timing impact
+      if (selectedAuth === 'session') {
+        minDays += 2;
+        maxDays += 3;
+      } else if (selectedAuth === 'jwt') {
+        minDays += 3;
+        maxDays += 4;
+      } else if (selectedAuth === 'social') {
+        minDays += 3;
+        maxDays += 5;
+      } else if (selectedAuth === 'oauth2') {
+        minDays += 4;
+        maxDays += 5;
+      } else if (selectedAuth === 'mfa') {
+        minDays += 5;
+        maxDays += 7;
+      }
+
+      // Deployment cloud timing impact
+      if (selectedDeploy.indexOf("AWS") !== -1 || selectedDeploy.indexOf("Amazon") !== -1) {
+        minDays += 4;
+        maxDays += 6;
+      } else if (selectedDeploy.indexOf("Heroku") !== -1) {
+        minDays += 2;
+        maxDays += 3;
+      } else if (selectedDeploy.indexOf("Render") !== -1) {
+        minDays += 1;
+        maxDays += 2;
+      }
+      
+      if (document.getElementById('add-dev-stripe').checked) {
+        total += 800;
+        addons.push("Stripe Payment Hub (+$800)");
+        minDays += 4;
+        maxDays += 6;
+      }
+      if (document.getElementById('add-dev-twilio').checked) {
+        total += 450;
+        addons.push("Twilio / API SMS Notifications (+$450)");
+        minDays += 2;
+        maxDays += 3;
+      }
+      
+      const finalDuration = `${minDays} to ${maxDays} Business Days`;
+      document.getElementById('dev-display-duration').innerText = finalDuration;
+      document.getElementById('dev-display-price').innerText = '$' + total.toLocaleString();
+      document.getElementById('dev-display-apis').innerText = apiCount > 0 ? `${apiCount} Custom APIs` : 'No Custom APIs';
+      
+      // Update Mailto Link
+      const emailRecipient = "romsitesllc@gmail.com";
+      const subject = encodeURIComponent("ROMSITES Custom Full-Stack Project Request");
+      
+      let bodyText = "Hi ROMSITES Web Lab,\n\n";
+      bodyText += "I created a custom full-stack software prototype request using your development.html estimator:\n\n";
+      bodyText += `- Architecture Core: ${label}\n`;
+      bodyText += `- Preferred Database Engine: ${selectedDb}\n`;
+      bodyText += `- Authentication Protocol: ${authLabel} (+$${authCost})\n`;
+      bodyText += `- Target Cloud Deployment Platform: ${deployLabel} (+$${deployCost})\n`;
+      bodyText += `- Personalized API Integrations: ${apiCount} (+$${apisCost})\n`;
+      bodyText += `- Selected Enterprise Add-ons:\n`;
+      if (addons.length > 0) {
+        addons.forEach(item => {
+          bodyText += `  * ${item}\n`;
+        });
+      } else {
+        bodyText += "  * None selected\n";
+      }
+      
+      if (devNotes) {
+        bodyText += `\n- Personalized Technical Specifications:\n  "${devNotes}"\n`;
+      }
+      
+      bodyText += `\n- Calculated Production Window: ${finalDuration}\n`;
+      bodyText += `- Total Mid-level Pricing Target: $${total.toLocaleString()}\n\n`;
+      bodyText += "Let's review my database relations requirements and coordinate a technical blueprint review.\n\nBest regards,\n[Your Name]";
+      
+      document.getElementById('dev-quote-btn').href = "mailto:" + emailRecipient + "?subject=" + subject + "&body=" + encodeURIComponent(bodyText);
+    }
+    
+    // Run initial on mount
+    document.addEventListener('DOMContentLoaded', calculateDevQuote);
+  </script>
+
+  <!-- Consultation & Action row -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16">
+    <a href="tel:317-740-5279" class="p-4 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 rounded-xl text-white text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+      <i class="fa-solid fa-phone"></i> Direct Consultation Call
+    </a>
+    <a href="mailto:romsitesllc@gmail.com?subject=ROMSITES Development Inquiry" class="p-4 bg-slate-900 border border-slate-800 rounded-xl text-white hover:bg-slate-850 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
+      <i class="fa-regular fa-envelope"></i> Request Technical Estimations
+    </a>
+  </section>
+
+  <!-- Other capabilities links -->
+  <section class="bg-slate-900/40 border border-slate-900/80 p-6 rounded-2xl text-center">
+    <h3 class="text-xs font-extrabold uppercase text-slate-500 tracking-widest mb-4">Other Services</h3>
+    <div class="grid grid-cols-3 gap-3">
+      <a href="{% url 'design' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Web Design
+      </a>
+      <a href="{% url 'maintenance' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Maintenance
+      </a>
+      <a href="{% url 'seo' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Local SEO Pack
+      </a>
+    </div>
+  </section>
+
 </div>
-
 {% endblock %}
-
-</body>
-</html>

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="max-w-md mx-auto px-4 py-20 z-10 select-none">
+  <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-2xl text-center space-y-6 animate-fade-in relative">
+    <div class="w-14 h-14 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-500 flex items-center justify-center text-2xl mx-auto shadow-lg shadow-rose-500/5">
+      <i class="fa-solid fa-triangle-exclamation"></i>
+    </div>
+    
+    <div class="space-y-2">
+      <h2 class="text-xl font-extrabold text-white">Confirm Record Deletion</h2>
+      <p class="text-xs text-slate-400 leading-normal max-w-xs mx-auto">
+        Are you sure you want to permanently delete this client review from the database? This action is immediate and non-reversible.
+      </p>
+    </div>
+
+    <!-- DB Information preview details if reviews is rendered -->
+    {% if review %}
+      <div class="bg-slate-950 border border-slate-900 p-4 rounded-xl text-left text-xs leading-normal space-y-1.5 font-medium">
+        <span class="block font-bold text-slate-350 flex justify-between">
+          <span>Client: {{ review.name }}</span>
+          <span class="text-amber-500 font-mono text-[9px]">{% for i in [1,2,3,4,5] %}{% if i <= review.rating %}★{% endif %}{% endfor %}</span>
+        </span>
+        <p class="text-slate-400 italic text-[11px] line-clamp-2">"{{ review.comment }}"</p>
+      </div>
+    {% endif %}
+
+    <form class="deleteForm space-y-3 pt-2" method="post">
+      {% csrf_token %}
+      <button class="w-full bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs uppercase tracking-wider py-3 rounded-xl transition-colors shadow-lg shadow-rose-500/10" type="submit">
+        Yes, Delete Record
+      </button>
+      <a href="{% url 'portfolio' %}" class="block text-center text-xs font-bold text-slate-400 hover:text-white uppercase tracking-widest pt-2">
+        Cancel & Keep
+      </a>
+    </form>
+  </div>
+</div>
+{% endblock %}

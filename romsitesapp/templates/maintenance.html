@@ -1,85 +1,359 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
+
 {% block content %}
-<div class="pageContainer">
-    <section class="serviceBlogContainer">
-        <h1 class="blogsTitle">Website Maintenance</h1>
-        <p class="blogsText">Website maintenance is a crucial aspect of maintaining a successful online presence. At Romsites, we understand that keeping your website updated, secure, and performing at its best is essential for your business's growth and success. Our comprehensive website maintenance services are designed to ensure your site remains in top condition, providing a seamless and enjoyable experience for your visitors.
-            <br/>
-            Regular website maintenance involves a variety of tasks, from updating content and software to monitoring performance and security. At Romsites, we take a proactive approach to maintenance, addressing potential issues before they become problems. This includes regular updates to your website's content, ensuring it remains relevant and engaging for your audience. Fresh content not only keeps your visitors coming back but also helps improve your search engine rankings.
-            <br/>
-            Security is a top priority at Romsites. With the increasing number of cyber threats, it's essential to have robust security measures in place to protect your website and your users' information. Our team conducts regular security audits, identifying and addressing vulnerabilities to keep your site safe from potential threats. We also implement security patches and updates to ensure your website remains secure.
-            <br/>
-            Performance optimization is another key aspect of our website maintenance services. A slow-loading website can deter visitors and negatively impact your search engine rankings. Our team at Romsites monitors your website's performance, identifying and resolving issues that may affect its speed and responsiveness. By optimizing your site's performance, we ensure a smooth and enjoyable experience for your visitors.
-            <br/>
-            In addition to these essential tasks, our website maintenance services also include regular backups of your site. This ensures that in the event of a data loss or technical issue, your website can be quickly restored to its previous state. Our team at Romsites takes care of all the technical details, allowing you to focus on running your business without worrying about your website.
-            <br/>
-            At Romsites, we believe that a well-maintained website is a cornerstone of digital success. Our maintenance services are tailored to meet the unique needs of each client, ensuring that your website remains up-to-date, secure, and performing at its best. We work closely with you to understand your business goals and provide the support you need to achieve them.
-            <br/>
-            In conclusion, website maintenance is an essential part of any successful digital strategy. At Romsites, we are committed to providing top-notch maintenance services that ensure your website remains in optimal condition. Our proactive approach, combined with our expertise in the latest technologies and best practices, makes us the ideal partner for your website maintenance needs. Trust Romsites to keep your website running smoothly, so you can focus on what you do best, growing your business.</p>
-    </section>
-    <section class="processContainer">
-        <h1 class="processTitle">Our Process</h1>
-        <div class="stepIconsContainer">
-            <div class="stepIcon">
-                <p class="stepNumber">1</p>
-                <p class="stepText">Review</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">2</p>
-                <p class="stepText">Update</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">3</p>
-                <p class="stepText">Monitor</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">4</p>
-                <p class="stepText">Support</p>
-            </div>
+<div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 z-10">
+
+  <!-- Core blog content -->
+  <article class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative mb-16 animate-fade-in text-left">
+    <div class="space-y-4">
+      <div class="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-400">
+        <i class="fa-solid fa-screwdriver-wrench"></i> Continuous Support Detail
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+        Ensuring Continuous Security & Peak Performance
+      </h1>
+
+      <!-- Metadata -->
+      <div class="flex items-center space-x-6 text-xs font-mono text-slate-500 border-b border-slate-800 pb-4 pt-1">
+        <span>Published: June 2026</span>
+        <span>Author: ROMSITES Security Operations</span>
+        <span>Read Time: 4 min</span>
+      </div>
+
+      <!-- Long-form text content -->
+      <div class="text-xs sm:text-sm text-slate-400 leading-relaxed space-y-4 pt-4">
+        <p>Continuous website maintenance is a vital, yet frequently overlooked, pillar of digital strategy. A static, unmonitored repository immediately compiles vulnerability vectors, suffers from database bloat, and undergoes platform decay that repels search traffic.</p>
+        
+        <p>At ROMSITES, we employ a proactive, security-first strategy. Rather than executing emergency operations after an actual system breach or database failure has compiled, we run weekly automated security scans, apply package updates, and audit application ports to maintain pristine compliance.</p>
+
+        <p class="border-l-2 border-emerald-500 pl-4 py-1 italic font-medium text-slate-300 bg-emerald-500/5 rounded-r">
+          "Defensive engineering saves thousands in disaster recovery." — Our system administrators verify code packages, perform secondary cloud database backups, and continuously check API connections for premium protection.
+        </p>
+
+        <p>Speed monitoring is another critical dimension. As web data models expand, indexing speeds can degrade. Our ongoing performance optimizations compress assets, clear old database logs, and verify server-side caches. Let ROMSITES handle the structural management so you can focus strictly on scaling your business operations.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Process block -->
+  <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl text-center mb-16">
+    <h2 class="text-xs font-extrabold uppercase text-emerald-400 tracking-widest mb-2">Our Process</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-10">Uptime & Security Lifecycle</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 relative">
+      
+      <!-- Step 1 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-emerald-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-emerald-500/40 transition-colors">
+          1
         </div>
-        <p class="processDescription">The website maintenance process starts with an Initial Assessment and Setup. We assess your website's current state, identifying areas for improvement and setting up maintenance protocols. This includes establishing backup schedules and security measures.
-            <br/>
-            Next, we move on to Regular Updates and Security Checks. We perform routine updates to your website's content, software, and security features. This ensures your site remains up-to-date, secure, and running smoothly.
-            <br/>
-            The third step is Performance Monitoring and Optimization. We continuously monitor your website's performance, addressing issues that may affect speed and responsiveness. This includes optimizing images, code, and server configurations.
-            <br/>
-            Finally, we proceed with Ongoing Support and Improvements. We provide ongoing support to address any technical issues or updates needed. This ensures your website remains in top condition and continues to meet your business goals.</p>
-    </section>    
-    <section class="hireButtonsContainer">
-        <div class="hireButtonContainer">
-            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Review</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Evaluating server ports, package packages, and database logs.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-emerald-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-emerald-500/40 transition-colors">
+          2
         </div>
-        <div class="hireButtonContainer">
-            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Update</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Deploying framework patches, module upgrades, and index fixes.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-emerald-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-emerald-500/40 transition-colors">
+          3
         </div>
-    </section>
-    <section class="otherServicesContainer">
-        <h1 class="otherServiceTitle">Other Services</h1>
-        <div class="otherServiceButtonsContainer">
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'development' %}" class="otherServiceButton">Web Development</a>
-            </div>
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'design' %}" class="otherServiceButton">Web Design</a>
-            </div>
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'seo' %}" class="otherServiceButton">Search Engine Optimization</a>
-            </div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Monitor</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Tracking live page-speed indicators and server connections.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-emerald-400 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-emerald-500/40 transition-colors">
+          4
         </div>
-    </section>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Support</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Providing direct developer pipelines to address user requests.</p>
+      </div>
+
+    </div>
+
+    <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed border-t border-slate-800/80 pt-6">
+      Every client receives structured, direct access, ensuring that critical structural changes are addressed within typical turn-around guidelines of 24 hours.
+    </p>
+  </section>
+
+  <!-- MAINTENANCE QUOTE CALCULATOR MODULE -->
+  <section id="maintenance-quote-calculator" class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative mb-16 text-left">
+    <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-emerald-500/10 blur-[80px] pointer-events-none select-none"></div>
+    <div class="space-y-4">
+      <div class="inline-flex items-center space-x-2 bg-emerald-500/10 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-emerald-400">
+        <i class="fa-solid fa-calculator"></i> Active Support Builder
+      </div>
+
+      <h3 class="text-2xl font-extrabold text-white leading-tight">
+        Estimate Your Maintenance & Security SLA
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-400">
+        Align your business with the proper weekly or daily support SLA. Select a continuous security coverage class and request custom service hours dynamically, optimized specifically for React frontends and Django (Python) backend frameworks.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Attributes selectors -->
+        <div class="space-y-6">
+          <!-- Support SLA Tier Select -->
+          <div class="space-y-2">
+            <label for="maintenance-tier" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Continuous Support Class</label>
+            <select id="maintenance-tier" onchange="calculateMaintenanceQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500 outline-none transition-all cursor-pointer">
+              <option value="99" data-label="Essential Security Tier (Weekly Django & React package security audits)" selected>Essential Django & React Security Tier (Weekly audits) — $99/mo</option>
+              <option value="199" data-label="Fleet Optimization Tier (Daily backups & Django patch management)">Fleet Optimization Tier (Daily backups & Django patches) — $199/mo</option>
+              <option value="399" data-label="Enterprise Live Uptime Tier (24/7 Live Monitoring of Django API + React elements)">Enterprise Live Uptime Tier (24/7 Django/React Live monitoring) — $399/mo</option>
+            </select>
+          </div>
+
+          <!-- Addons grid -->
+          <div class="space-y-2">
+            <label class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Structural Security Deliverables</label>
+            <div class="space-y-3">
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-maint-db" onchange="calculateMaintenanceQuote()" class="rounded bg-slate-950 border-slate-800 text-emerald-500 focus:ring-emerald-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">Relational Database Indexing Audits</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Weekly cache optimization & index performance check (+$80/mo)</span>
+                </div>
+              </label>
+
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-maint-hours" onchange="calculateMaintenanceQuote()" class="rounded bg-slate-950 border-slate-800 text-emerald-500 focus:ring-emerald-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">Dedicated Developer Hours SLA</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Premium block of 5 developer hours/mo for updates & layout edits (+$150/mo)</span>
+                </div>
+              </label>
+
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-maint-port" onchange="calculateMaintenanceQuote()" class="rounded bg-slate-950 border-slate-800 text-emerald-500 focus:ring-emerald-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">SSL, Port, & Threat-Intel Upkeep</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Constant security validation checks avoiding core network decay (+$50/mo)</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Personalized Customization Additions -->
+          <div class="border-t border-slate-850 pt-4 space-y-4">
+            <!-- Custom domains slider -->
+            <div class="space-y-2">
+              <label for="maint-domains" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider flex justify-between">
+                <span>Domain Support Scope</span> 
+                <span id="maint-domains-val" class="font-mono text-emerald-400 font-black">1 Domain</span>
+              </label>
+              <div class="flex items-center space-x-4">
+                <input type="range" id="maint-domains" min="1" max="6" value="1" oninput="calculateMaintenanceQuote()" class="w-full accent-emerald-500 bg-slate-950 border border-slate-800 h-2 rounded-lg cursor-pointer">
+                <span class="text-xs font-mono font-bold text-slate-500 whitespace-nowrap">+$30/ea</span>
+              </div>
+            </div>
+            
+            <!-- SLA Window Select -->
+            <div class="space-y-2">
+              <label for="maint-sla" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Priority SLA Response Window</label>
+              <select id="maint-sla" onchange="calculateMaintenanceQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500 outline-none transition-all cursor-pointer">
+                <option value="0" data-label="Standard (24-Hour Digital Ticketing)" selected>Standard (24-Hour Digital Ticketing) — Included</option>
+                <option value="50" data-label="Premium Support Window (4-Hour Active Slack/SLA)">Premium Support SLA (4-Hour Active Slack) — +$50/mo</option>
+                <option value="120" data-label="Mission Critical Incident Response (1-Hour Direct SMS)">Mission Critical Response (1-Hour Direct Phone/SMS) — +$120/mo</option>
+              </select>
+            </div>
+
+            <!-- Support Notes specifications -->
+            <div class="space-y-2">
+              <label for="maint-notes" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Custom Maintenance Requests</label>
+              <textarea id="maint-notes" oninput="calculateMaintenanceQuote()" placeholder="e.g. Hosting is on Google Cloud Run, requires continuous integration checks, or daily db state exports..." class="w-full min-h-[60px] max-h-[140px] px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-semibold focus:border-emerald-500/60 focus:ring-1 focus:ring-emerald-500 outline-none transition-all resize-none" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Render visual estimation output -->
+        <div class="bg-slate-950/80 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between h-full space-y-6">
+          <div class="space-y-4">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400">ROMSITES Cybersecurity Operations</span>
+            <div class="border-b border-slate-905 pb-4">
+              <span class="text-[9px] uppercase font-bold text-slate-500 font-mono">Monthly Support Budget</span>
+              <div id="maint-display-price" class="text-4xl font-black text-white mt-1">$99<span class="text-sm font-semibold text-slate-550">/mo</span></div>
+              <span class="text-[10px] font-semibold text-slate-400 block mt-1">Continuous coverage. Cancel anytime.</span>
+            </div>
+            
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="flex justify-between">
+                <span>Backup SLA:</span>
+                <span id="maint-display-backups" class="font-bold text-slate-200">Weekly automated backups</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Domain Coverage:</span>
+                <span id="maint-display-domains" class="font-bold text-slate-200">1 Site</span>
+              </div>
+              <div class="flex justify-between">
+                <span>SLA Speed Guarantee:</span>
+                <span id="maint-display-sla" class="font-bold text-emerald-400">Standard 24h</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Activation Turnaround:</span>
+                <span id="maint-display-duration" class="font-bold text-slate-200">3 to 5 Business Days</span>
+              </div>
+            </div>
+          </div>
+
+          <a id="maint-quote-btn" href="mailto:romsitesllc@gmail.com?subject=ROMSITES Maintenance Plan" class="w-full py-3.5 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 rounded-xl text-slate-950 text-xs font-bold uppercase tracking-wider text-center shadow-lg transition-transform block">
+            <i class="fa-regular fa-envelope mr-1"></i> Retrieve Maintenance Contract
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function calculateMaintenanceQuote() {
+      const selectEl = document.getElementById('maintenance-tier');
+      const baseCost = parseInt(selectEl.value);
+      const label = selectEl.options[selectEl.selectedIndex].getAttribute('data-label');
+      
+      // Personalized domains input
+      const domainInput = document.getElementById('maint-domains');
+      const domainsCount = parseInt(domainInput.value) || 1;
+      document.getElementById('maint-domains-val').innerText = `${domainsCount} Site${domainsCount === 1 ? '' : 's'}`;
+      // 1 domain included in base, extra is $30 each
+      const domainsCost = (domainsCount - 1) * 30;
+ 
+      // SLA priority
+      const slaEl = document.getElementById('maint-sla');
+      const slaCost = parseInt(slaEl.value);
+      const selectedSlaLabel = slaEl.options[slaEl.selectedIndex].getAttribute('data-label');
+      document.getElementById('maint-display-sla').innerText = selectedSlaLabel.split(' (')[0].split(' Incident')[0];
+ 
+      // Custom maint notes
+      const maintNotes = document.getElementById('maint-notes').value.trim();
+ 
+      let addons = [];
+      let total = baseCost + domainsCost + slaCost;
+      
+      // Dynamic onboarding turnaround calculation
+      let minDays = 3;
+      let maxDays = 5;
+      if (baseCost === 199) {
+        minDays = 2;
+        maxDays = 3;
+      } else if (baseCost === 399) {
+        minDays = 1;
+        maxDays = 2;
+      }
+      
+      // Additional domains timeline impact
+      const extraDomains = domainsCount - 1;
+      minDays += Math.floor(extraDomains / 2);
+      maxDays += Math.ceil(extraDomains / 2);
+      
+      // Adaptative backup logic
+      let backupText = "Weekly automated backups";
+      if (baseCost === 199) {
+        backupText = "Daily backups & compression";
+      } else if (baseCost === 399) {
+        backupText = "Hourly streaming & backups";
+      }
+      document.getElementById('maint-display-backups').innerText = backupText;
+      
+      if (document.getElementById('add-maint-db').checked) {
+        total += 80;
+        addons.push("Database Index Optimizations (+$80/mo)");
+        minDays += 1;
+        maxDays += 1;
+      }
+      if (document.getElementById('add-maint-hours').checked) {
+        total += 150;
+        addons.push("5 Developer Hours Allocation (+$150/mo)");
+        minDays += 1;
+        maxDays += 1;
+      }
+      if (document.getElementById('add-maint-port').checked) {
+        total += 50;
+        addons.push("Threat-Intel & Port Audit Upkeep (+$50/mo)");
+        minDays += 1;
+        maxDays += 1;
+      }
+      
+      // SLA speed impact on onboarding priority
+      if (slaCost === 120) {
+        // Mission critical SLA prioritizes onboarding timeline immediately
+        minDays = Math.max(1, minDays - 1);
+        maxDays = Math.max(minDays, maxDays - 1);
+      }
+      
+      const finalDuration = `${minDays} to ${maxDays} Business Days`;
+      document.getElementById('maint-display-duration').innerText = finalDuration;
+      document.getElementById('maint-display-price').innerHTML = '$' + total.toLocaleString() + '<span class="text-sm font-semibold text-slate-500">/mo</span>';
+      document.getElementById('maint-display-domains').innerText = `${domainsCount} Site${domainsCount === 1 ? '' : 's'}`;
+      
+      // Update Mailto Link
+      const emailRecipient = "romsitesllc@gmail.com";
+      const subject = encodeURIComponent("ROMSITES Custom Security Maintenance Request");
+      
+      let bodyText = "Hi ROMSITES Security Operations,\n\n";
+      bodyText += "I initialized a custom monthly security maintenance tier on your portal. Details:\n\n";
+      bodyText += `- Support SLA Tier: ${label}\n`;
+      bodyText += `- Selected Domain Coverage: ${domainsCount} Site(s) (+$${domainsCost}/mo)\n`;
+      bodyText += `- SLA Response Window: ${selectedSlaLabel}\n`;
+      bodyText += `- Selected Subscriptions:\n`;
+      if (addons.length > 0) {
+        addons.forEach(item => {
+          bodyText += `  * ${item}\n`;
+        });
+      } else {
+        bodyText += "  * None selected\n";
+      }
+      
+      if (maintNotes) {
+        bodyText += `\n- Personalized Maintenance & Support Requests:\n  "${maintNotes}"\n`;
+      }
+      
+      bodyText += `\n- Calculated Onboarding Turnaround: ${finalDuration}\n`;
+      bodyText += `- Monthly Estimated SLA Budget Detail: $${total.toLocaleString()}/month\n\n`;
+      bodyText += "We would like to establish an onboarding systems integration roadmap. Let's arrange our kickoff call.\n\nBest regards,\n[Your Name]";
+      
+      document.getElementById('maint-quote-btn').href = "mailto:" + emailRecipient + "?subject=" + subject + "&body=" + encodeURIComponent(bodyText);
+    }
+    
+    // Run initial on mount
+    document.addEventListener('DOMContentLoaded', calculateMaintenanceQuote);
+  </script>
+
+  <!-- Consultation & Action row -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16">
+    <a href="tel:317-740-5279" class="p-4 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 rounded-xl text-slate-950 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+      <i class="fa-solid fa-phone"></i> Direct Support Call
+    </a>
+    <a href="mailto:romsitesllc@gmail.com?subject=ROMSITES Maintenance Inquiry" class="p-4 bg-slate-900 border border-slate-800 rounded-xl text-white hover:bg-slate-850 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
+      <i class="fa-regular fa-envelope"></i> Request System Audit Plan
+    </a>
+  </section>
+
+  <!-- Other capabilities links -->
+  <section class="bg-slate-900/40 border border-slate-900/80 p-6 rounded-2xl text-center">
+    <h3 class="text-xs font-extrabold uppercase text-slate-500 tracking-widest mb-4">Other Services</h3>
+    <div class="grid grid-cols-3 gap-3">
+      <a href="{% url 'design' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Web Design
+      </a>
+      <a href="{% url 'development' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Web Development
+      </a>
+      <a href="{% url 'seo' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Local SEO Pack
+      </a>
+    </div>
+  </section>
+
 </div>
-
 {% endblock %}
-
-</body>
-</html>

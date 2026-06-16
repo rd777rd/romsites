@@ -1,104 +1,147 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About</title>
-<link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
+
 {% block content %}
-<div class="pageContainer">
-    <section class="ourMission">
-        <div class="missionContainer">
-            <h2 class="missionTitle">Our Mission</h2>
-            <p class="missionText">At Romsites, our mission is to empower businesses by providing cutting-edge, affordable, and effective website solutions that drive growth and success.
-                <br/>
-                Our goal is to create high-quality, user-friendly websites that not only captivate audiences but also perform exceptionally well in search engine rankings.
-                <br/>
-                 We are committed to leveraging the latest technologies and best practices to deliver fast, secure, and visually stunning websites that enhance our clients' online presence. 
-                 <br/>
-                 With a focus on customer satisfaction, we strive to exceed expectations and help businesses of all sizes thrive in the digital landscape.
-                </p>
+<div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 z-10">
+
+  <!-- Main Grid Section: Mission + Dynamic Quote Banner -->
+  <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-16 animate-fade-in">
+    <div class="lg:col-span-7 bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8 flex flex-col justify-between space-y-4 shadow-xl">
+      <div>
+        <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest mb-2">Our Mission</h2>
+        <h3 class="text-2xl font-extrabold text-white mb-4">Empowering Growth Nationwide & Globally</h3>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed space-y-3 text-left">
+          At ROMSITES, our mission is to empower local businesses by providing cutting-edge, high-performance, and affordable website solutions that translate directly into growth. We write efficient server logic and optimize database queries to ensure your digital storefront loads instantly.
+          <br/><br/>
+          We believe that a professional web framework shouldn't require complex configurations or sluggish dependencies. By focusing on standard-compliant development, responsive styling, and elite SEO architectures, we ensure your business ranks high and converts more traffic.
+        </p>
+      </div>
+      <div class="pt-4 border-t border-slate-800/60 text-xs font-semibold text-slate-300">
+        <i class="fa-solid fa-seedling text-amber-400 mr-2"></i> Committed to customer success & sustainable digital scalability.
+      </div>
+    </div>
+
+    <!-- Right Side: Large Display Quote Card -->
+    <div class="lg:col-span-5 bg-gradient-to-br from-primary-600 to-indigo-700 rounded-2xl p-6 md:p-8 flex flex-col justify-between text-white relative overflow-hidden shadow-xl shadow-primary-500/10">
+      <div class="absolute -top-10 -right-10 w-40 h-40 rounded-full bg-white/5 blur-xl pointer-events-none"></div>
+      <div class="text-xs font-bold uppercase tracking-widest text-primary-100">Partnership Mindset</div>
+      <div class="text-3xl sm:text-4xl font-black uppercase tracking-tight leading-tight my-6 select-none leading-none">
+        We <br/>
+        Grow <br/>
+        <span class="text-amber-300">Together.</span>
+      </div>
+      <div class="text-xs text-primary-100/80 font-medium">
+        Every line of code is structured to escalate your brand value.
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Who We Are & What We Do -->
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+    
+    <!-- Who We Are -->
+    <div class="bg-slate-900/60 border border-slate-800/40 hover:border-slate-800/80 p-6 md:p-8 rounded-2xl space-y-3 transition-colors duration-300 shadow-md">
+      <div class="flex items-center space-x-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-550/20 text-orange-400 flex items-center justify-center">
+          <i class="fa-solid fa-people-group"></i>
         </div>
-        <div class="statementContainer">
-            <h1 class="missionStatement"><span class="">We</span> <span class="">grow</span> together.</h1>
+        <h3 class="text-xl font-bold text-white">Who we are?</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-slate-400 leading-relaxed text-left">
+        ROMSITES, founded with the vision of revolutionizing local web services, has rapidly grown into a prominent provider of custom web strategies for trades, specialized practices, and ambitious ecommerce establishments nationwide.
+        <br/><br/>
+        Comprising developers and digital strategists, our US-based team delivers bespoke web development (specializing in Django & React), advanced database architectures, and tailored marketing schemas. As a reliable long-term partner, we focus on maximizing your conversions.
+      </p>
+    </div>
+
+    <!-- What We Do -->
+    <div class="bg-slate-900/60 border border-slate-800/40 hover:border-slate-800/80 p-6 md:p-8 rounded-2xl space-y-3 transition-colors duration-300 shadow-md">
+      <div class="flex items-center space-x-3 mb-2">
+        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-550/20 text-indigo-400 flex items-center justify-center">
+          <i class="fa-solid fa-puzzle-piece"></i>
         </div>
-    </section>
-    <section class="aboutUs">
-        <div class="whoContainer">
-            <h2 class="whoTitle">Who we are?</h2>
-            <p class="whoText">Romsites, founded with the vision of revolutionizing web development, has rapidly grown into a leading provider of website solutions for businesses of all sizes. 
-                <br/>
-                With a team of experienced professionals, Romsites leverages cutting-edge technologies and industry best practices to deliver exceptional web services.
-                <br/>
-                Our company is dedicated to creating high-quality, user-friendly websites that are optimized for search engines, ensuring maximum visibility and engagement.
-                <br/>
-                As a trusted partner, Romsites is committed to helping businesses enhance their online presence, improve customer experience, and drive growth through innovative and effective website solutions.</p>
+        <h3 class="text-xl font-bold text-white">What we do?</h3>
+      </div>
+      <p class="text-xs sm:text-sm text-slate-400 leading-relaxed text-left">
+        We architect highly responsive systems tailored to support industrial needs and business growths. From UI wireframe mockups crafted in Figma to fully responsive servers running high-speed layouts, we manage your entire online presence.
+        <br/><br/>
+        Our SEO processes are designed to target critical high-intent keywords, bringing relevant organic traffic straight to your brand. With continuous security maintenance, database recovery, and speed optimizations, we keep your engine in top shape.
+      </p>
+      <div class="pt-2">
+        <a href="{% url 'services' %}" class="inline-flex items-center text-xs font-semibold text-amber-500 hover:underline">
+          Browse Service Suite <i class="fa-solid fa-arrow-right ml-1"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Full-Stack Dynamic Reviews Hub (Interactive Form & Latest Review) -->
+  <section class="border-t border-slate-900 pt-16 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-12">
+    
+    <!-- Latest Verified Review Panel -->
+    <div class="lg:col-span-5 space-y-6">
+      <div class="space-y-2">
+        <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest mt-1">Client Spotlight</h2>
+        <h3 class="text-2xl font-extrabold text-white mb-2">Real Partner Reviews</h3>
+        <p class="text-xs text-slate-400">See what local companies say after launching custom platforms with ROMSITES.</p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl shadow-xl relative">
+        <div class="absolute top-4 right-4 text-4xl text-slate-800/80 pointer-events-none select-none">
+          <i class="fa-solid fa-quote-right"></i>
         </div>
-        <div class="whatContainer">
-            <div class="whatTitleTextContainer">
-            <h1 class="whatTitle">What we do?</h1>
-            <p class="whatText">At Romsites, we offer a full suite of website services to cater to the diverse needs of businesses. Our expertise spans web design, web development, SEO, and website maintenance, using industry-leading technologies to deliver exceptional results.
-                <br/>
-                Our web design service focuses on creating visually stunning and user-friendly websites that captivate your audience. We leverage tools like Figma for designing intuitive and responsive layouts. Our design process ensures that your website not only looks great but also provides an optimal user experience across all devices. From wireframes to final mockups, we work closely with you to bring your vision to life.
-                <br/>
-                At Romsites, we turn designs into fully functional websites using cutting-edge technologies. Our web development team is proficient in HTML, CSS, JavaScript, React.js, Django, and ASP.NET. Whether you need a simple website or a complex web application, our developers have the skills and expertise to deliver high-quality solutions. We focus on creating scalable, secure, and high-performance websites that meet your business needs.
-                <br/>
-                A beautiful website is meaningless if it can't be found by your target audience. Our SEO services ensure that your website ranks high in search engine results, driving organic traffic and increasing visibility. We utilize the latest SEO techniques, including keyword research, on-page optimization, link building, and content creation. Our goal is to improve your website's search engine performance, helping you reach more potential customers and achieve your business objectives.
-                <br/>
-                Keeping your website updated and running smoothly is crucial for maintaining its performance and security. Romsites offers comprehensive website maintenance services, including regular updates, security checks, backups, and performance optimization. Our team is always on hand to address any issues and ensure your website remains in top condition. With our maintenance service, you can focus on your business while we take care of your website.
-                <br/>
-                Romsites is committed to providing fast, effective, affordable, and high-quality website solutions. By leveraging state-of-the-art technologies and industry best practices, we deliver websites that not only meet but exceed your expectations. Our holistic approach ensures that all aspects of your online presence are taken care of, from design and development to SEO and ongoing maintenance.
-                <br/>
-                Choose Romsites and elevate your online presence with our comprehensive and tailored website services. Let us help you build a website that drives growth and success for your business.</p>
-            </div>
-            <a href="{% url 'services' %}" class="whatLink">Our Services</a>
-        </div>
-    </section>
-    <section class="reviewSectionContainer">
-        <h1 class="reviewTitle">Leave A Review</h1>
-        <div class="reviewsContainer">
-            <div class="reviewContainer">
-                {% if reviews %}
-                <div class="reviewInfo">
-                    <h3 class="reviewName">{{ reviews.0.name }}</h3>
-                    <div class="stars">
-                        {% for i in "12345" %}
-                            {% if forloop.counter <= reviews.0.rating %}
-                                <span class="starIcon filled">&#9733;</span>
-                            {% else %}
-                                <span class="starIcon">&#9734;</span>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                    {% if reviews.0.rating >= 5 %}
-                        <p class="satisfaction">Satisfied</p>
+
+        {% if reviews %}
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="text-sm font-extrabold text-white">{{ reviews.0.name }}</h4>
+                <div class="flex items-center space-x-0.5 mt-1">
+                  {% for i in [1, 2, 3, 4, 5] %}
+                    {% if i <= reviews.0.rating %}
+                      <i class="fa-solid fa-star text-amber-500 text-xs"></i>
                     {% else %}
-                        <p class="satisfaction">Unsatisfied</p>
+                      <i class="fa-regular fa-star text-slate-800 text-xs"></i>
                     {% endif %}
+                  {% endfor %}
                 </div>
-                <div class="reviewTextContainer">
-                    <p class="reviewText">"{{ reviews.0.comment }}"</p>
-                </div>
-                {% else %}
-                <p class="noReviews">Be the first to leave a review!</p>
-                {% endif %}
+              </div>
+              {% if reviews.0.rating >= 4 %}
+                <span class="text-[10px] font-extrabold text-emerald-400 bg-emerald-400/10 px-2 py-1 rounded-full uppercase tracking-widest">Satisfied</span>
+              {% else %}
+                <span class="text-[10px] font-extrabold text-amber-500 bg-amber-500/10 px-2 py-1 rounded-full uppercase tracking-widest">Awaiting Edits</span>
+              {% endif %}
             </div>
-        </div>
-        <div class="leaveReviewContainer">
-            <h1 class="leaveReviewTitle">Your Review</h1>
-            <form method="post" class="reviewForm">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit" class="reviewSubmit">Submit Review</button>
-            </form>
-        </div>
-    </section>
+
+            <p class="text-xs text-slate-350 leading-relaxed italic text-left">
+              "{{ reviews.0.comment }}"
+            </p>
+          </div>
+        {% else %}
+          <p class="text-xs text-slate-400 italic text-center">Be the first to partner with us and leave a review!</p>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- Active Feedback Collection Form (CRUD Node POST entry) -->
+    <div class="lg:col-span-7 bg-slate-900/40 border border-slate-900 p-6 md:p-8 rounded-2xl shadow-2xl">
+      <h3 class="text-lg font-extrabold text-white flex items-center space-x-2 border-b border-slate-800 pb-3 mb-6">
+        <i class="fa-solid fa-pencil text-amber-400"></i>
+        <span>Your Review</span>
+      </h3>
+      
+      <form method="post" class="reviewForm space-y-4 text-left">
+        {% csrf_token %}
+        
+        <!-- Replaced form.as_p for high portfolio conversions -->
+        {{ form_html }}
+        
+        <button type="submit" class="w-full bg-gradient-to-r from-primary-500 to-indigo-600 hover:from-primary-600 hover:to-indigo-700 py-3 rounded-xl text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-transform hover:scale-[1.01] active:translate-y-px">
+          Submit Review
+        </button>
+      </form>
+    </div>
+  </section>
+
 </div>
 {% endblock %}
-</body>
-</html>

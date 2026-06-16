@@ -1,71 +1,163 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load review_filters %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
+
 {% block content %}
-<div class="pageContainer">
-    <h1 class="portfolioTitle">Our Work</h1>
-    <section class="projectsContainer">
-        <div class="projectContainer">
-            <div class="projectImgContainer">
-                <img src="{% static 'img/smallscapes.png' %}" class="projectImg"/>
+<div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 z-10">
+
+  <!-- Section 1: Portfolio Grid -->
+  <section class="mb-24 animate-fade-in text-center">
+    <div class="space-y-3 mb-16">
+      <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest">Selected Works</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Our Engineering Portfolio</h3>
+      <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">Review our live case models representing industry-grade speed and seamless user-journey layouts.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      
+      <!-- Project 1: Smallscapes -->
+      <div class="group bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl hover:border-slate-700/80 transition-all duration-300 hover:-translate-y-1">
+        <!-- Interactive Vector Screen Mockup -->
+        <div class="h-64 bg-slate-950 flex flex-col justify-between p-6 relative overflow-hidden group-hover:bg-slate-950/80 transition-colors">
+          <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-emerald-500/10 blur-[80px] pointer-events-none"></div>
+          
+          <div class="flex items-center justify-between z-10">
+            <span class="text-[10px] font-extrabold text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2.5 py-1 rounded-full uppercase tracking-widest">Premium Landscaping</span>
+            <span class="text-xs font-mono text-slate-500 font-semibold flex items-center"><i class="fa-solid fa-bolt text-emerald-400 mr-1"></i> 99/100 PageSpeed</span>
+          </div>
+
+          <!-- Stylized Screen Content -->
+          <div class="bg-slate-900 border border-slate-850 p-4 rounded-xl space-y-2 max-w-sm mt-4 shadow-2xl relative z-10">
+            <h5 class="text-xs font-bold text-slate-100 flex items-center justify-between">
+              <span>SmallScapes LLC Portfolio</span>
+              <span class="text-[9px] text-emerald-400 font-mono">LIVE_DEPLOYMENT</span>
+            </h5>
+            <div class="h-1.5 w-2/3 bg-slate-950 rounded-full"></div>
+            <div class="grid grid-cols-3 gap-2 pt-1">
+              <div class="h-8 bg-slate-950/50 rounded-lg border border-slate-800/40 p-1 text-[8px] font-bold text-center text-slate-400">Patios</div>
+              <div class="h-8 bg-slate-950/50 rounded-lg border border-slate-800/40 p-1 text-[8px] font-bold text-center text-slate-400">Gardens</div>
+              <div class="h-8 bg-slate-950/50 rounded-lg border border-slate-800/40 p-1 text-[8px] font-bold text-center text-slate-400">Estimator</div>
             </div>
-            <div class="projectTextContainer">
-                <h1 class="projectTitle">Smallscapes</h1>
-                <p class="projectText">A website that we designed and developed for a client in the landscaping industry.</p>
-            </div>
+          </div>
+
+          <div class="text-[11px] font-semibold text-slate-400 pt-3 flex justify-between items-center z-10 border-t border-slate-900/60 mt-4">
+            <span>Server Framework: Django Core</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-white transition-colors"></i>
+          </div>
         </div>
-        <div class="projectContainer">
-            <div class="projectImgContainer">
-                <img src="{% static 'img/invoices.png' %}" class="projectImg"/>
-            </div>
-            <div class="projectTextContainer">
-                <h1 class="projectTitle">Invoice System</h1>
-                <p class="projectText">An invoice system web app we designed and developed.</p>
-            </div>
+
+        <div class="p-6 sm:p-8 space-y-3 border-t border-slate-800/40">
+          <h4 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Smallscapes Landscapes</h4>
+          <p class="text-xs text-slate-400 leading-relaxed text-justify">
+            A premium geological catalog and estimation engine built for a leading landscaping company. Handles responsive content maps, custom service catalogs, and SMS client consultation lead pipelines.
+          </p>
         </div>
-    </section>
-    <h1 class="clientReviewTitle">Client Reviews</h1>
-    <section class="multipleReviewsContainer">
+      </div>
+
+      <!-- Project 2: Business Invoice System -->
+      <div class="group bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-xl hover:border-slate-700/80 transition-all duration-300 hover:-translate-y-1">
+        <!-- Dashboard Mockup View -->
+        <div class="h-64 bg-slate-950 flex flex-col justify-between p-6 relative overflow-hidden group-hover:bg-slate-950/80 transition-colors">
+          <div class="absolute -bottom-12 -right-12 w-48 h-48 rounded-full bg-primary-500/10 blur-[80px] pointer-events-none"></div>
+          
+          <div class="flex items-center justify-between z-10">
+            <span class="text-[10px] font-extrabold text-blue-400 bg-blue-400/10 border border-blue-400/20 px-2.5 py-1 rounded-full uppercase tracking-widest">Enterprise Software</span>
+            <span class="text-xs font-mono text-slate-500 font-semibold flex items-center"><i class="fa-solid fa-database text-blue-400 mr-1"></i> SQLite Database</span>
+          </div>
+
+          <!-- Stylized Invoice Ledger -->
+          <div class="bg-slate-900 border border-slate-850 p-4 rounded-xl space-y-2 mt-4 shadow-2xl relative z-10">
+            <div class="flex justify-between items-center text-xs font-bold text-slate-350">
+              <span>Invoice #1089</span>
+              <span class="text-emerald-400 font-extrabold">$10,800.00</span>
+            </div>
+            <div class="h-px bg-slate-800/80 my-1"></div>
+            <div class="flex justify-between items-center text-[10px] text-slate-500 font-semibold">
+              <span>Client Name: Client 1</span>
+              <span>Status: <strong class="text-blue-400 font-bold">PAID</strong></span>
+            </div>
+            <div class="flex gap-2">
+              <span class="text-[8px] font-bold text-slate-400 bg-slate-950 px-2 py-0.5 rounded border border-slate-800/50">1 Ton of Stone</span>
+              <span class="text-[8px] font-bold text-slate-400 bg-slate-950 px-2 py-0.5 rounded border border-slate-800/50">Pavers</span>
+            </div>
+          </div>
+
+          <div class="text-[11px] font-semibold text-slate-400 pt-3 flex justify-between items-center z-10 border-t border-slate-900/60 mt-4">
+            <span>Modules: Auth Session + Custom Calculations</span>
+            <i class="fa-solid fa-arrow-up-right-from-square text-slate-500 group-hover:text-white transition-colors"></i>
+          </div>
+        </div>
+
+        <div class="p-6 sm:p-8 space-y-3 border-t border-slate-800/40">
+          <h4 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">Industrial Invoice Manager</h4>
+          <p class="text-xs text-slate-400 leading-relaxed text-justify">
+            A secure full-stack customer invoicing portal allowing administrators to declare specific project inventories (pavers, gravel, labor), calculate custom items, and securely export client billings.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 2: Real-Time Reviews Board with Delete Actions (Crucial Full-Stack Django logic verify) -->
+  <section class="border-t border-slate-900 pt-16 text-center mb-12">
+    <div class="space-y-2 mb-12">
+      <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest">Client Reviews</h2>
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white">Recent Success Feedbacks</h3>
+      <p class="text-xs text-slate-400 max-w-xl mx-auto">Our database maintains persistent testimonials. Use the security delete links below to manage comments.</p>
+    </div>
+
+    <!-- Active Reviews Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {% if reviews %}
         {% for review in reviews %}
-        <div class="reviewContainer">
-        <div class="reviewInfo">
-            <h3 class="reviewName">{{ review.name }}</h3>
-            <div class="stars">
-                {% for i in "12345" %}
-                            {% if forloop.counter <= review.rating %}
-                            <span class="starIcon filled">&#9733;</span>
-                            {% else %}
-                            <span class="starIcon">&#9734;</span>
-                            {% endif %}
-                        {% endfor %}
-            </div>
-            {% if review.rating >= 3 %}
-                        <p class="satisfaction">Satisfied</p>
+          <div class="bg-slate-900/40 border border-slate-900 p-6 rounded-2xl relative flex flex-col justify-between text-left hover:border-slate-800 transition-colors shadow-lg">
+            
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div>
+                  <h4 class="text-sm font-extrabold text-slate-200">{{ review.name }}</h4>
+                  <span class="text-[9px] font-bold text-slate-500 uppercase tracking-widest">Verified Client Partner</span>
+                </div>
+                
+                <div class="flex items-center space-x-0.5">
+                  {% for i in [1, 2, 3, 4, 5] %}
+                    {% if i <= review.rating %}
+                      <i class="fa-solid fa-star text-amber-500 text-xs"></i>
                     {% else %}
-                        <p class="satisfaction">Unsatisfied</p>
+                      <i class="fa-regular fa-star text-slate-800 text-xs"></i>
                     {% endif %}
-        </div>
-        <div class="reviewTextContainer">
-            <p class="reviewText">{{ review.comment }}</p>
-        </div>
-        </div>
+                  {% endfor %}
+                </div>
+              </div>
+
+              <p class="text-xs text-slate-400 leading-relaxed italic pr-2">
+                "{{ review.comment }}"
+              </p>
+            </div>
+
+            <!-- Footer of review card containing security actions -->
+            <div class="mt-6 pt-3 border-t border-slate-850/50 flex justify-between items-center">
+              {% if review.rating >= 3 %}
+                <span class="text-[9px] font-bold text-emerald-400 uppercase tracking-widest bg-emerald-500/10 px-2 py-0.5 rounded-full">★ Satisfied Partner</span>
+              {% else %}
+                <span class="text-[9px] font-bold text-amber-500 uppercase tracking-widest bg-amber-500/10 px-2 py-0.5 rounded-full">★ Feedback Pending</span>
+              {% endif %}
+
+              <!-- Action Link to invoke real-time backend deletion -->
+              <a href="/delete-review/{{ review.id }}" class="text-[9px] font-bold text-rose-500 hover:text-rose-400 border border-rose-500/20 hover:border-rose-400/30 px-2.5 py-1 rounded-md transition-colors flex items-center gap-1 uppercase select-none outline-none">
+                <i class="fa-regular fa-trash-can"></i> Manage Review
+              </a>
+            </div>
+
+          </div>
         {% endfor %}
+      {% else %}
+        <div class="col-span-1 md:col-span-2 bg-slate-900/60 border border-slate-900 p-8 rounded-2xl text-center text-xs text-slate-400 font-medium">
+          No records currently registered. Be the first to launch a custom platform!
+        </div>
+      {% endif %}
+    </div>
+  </section>
 
-
-    </section>
 </div>
-
-
 {% endblock %}
-
-</body>
-</html>

@@ -1,92 +1,347 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
+
 {% block content %}
-<div class="pageContainer">
-   <section class="servicesContainer">
-        <h1 class="serviceTitle">Our Services</h1>
-        <div class="serviceIconsContainer">
-            <a href="{% url 'design' %}" class="serviceIconContainer">
-                <img src="{% static 'img/designicon.png' %}" class="serviceImg"/>
-                <p class="serviceName">Web Design</p>
-            </a>
-            <a href="{% url 'development' %}" class="serviceIconContainer">
-                <img src="{% static 'img/developmenticon.png' %}" class="serviceImg"/>
-                <p class="serviceName">Web Development</p>
-            </a>
-            <a href="{% url 'seo' %}" class="serviceIconContainer">
-                <img src="{% static 'img/seoicon.png' %}" class="serviceImg"/>
-                <p class="serviceName">Seo</p>
-            </a>
-            <a href="{% url 'maintenance' %}" class="serviceIconContainer">
-                <img src="{% static 'img/maintenanceicon.png' %}" class="serviceImg"/>
-                <p class="serviceName">Website Maintenance</p>
-            </a>
+<div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 z-10">
+
+  <!-- Core Services Showcase Grid -->
+  <section class="mb-20 animate-fade-in">
+    <div class="text-center space-y-3 mb-16">
+      <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest">Our Services</h2>
+      <h3 class="text-3xl sm:text-4xl font-extrabold text-white">Engineered Web Architecture</h3>
+      <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">We construct elite, fast digital framework deployments that make traditional content management models resemble legacy software.</p>
+    </div>
+
+    <!-- 4 Main capability rows/cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Card: Web Design -->
+      <a href="{% url 'design' %}" class="group bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-start hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-500 flex items-center justify-center text-2xl flex-shrink-0">
+          <i class="fa-solid fa-compass-drafting"></i>
         </div>
-    </section>
-    <section class="growConsultationContainer">
-        <div class="growContainer">
-            <h2 class="growTitle">We Build & Grow<br/> Solutions Together!</h2>
-            <p class="growText">Looking for expert help to determine and build the ideal web solution for your business?</p>
-            <div class="iconsContainer">
-                <img src="{% static 'img/connecticon.png' %}" class="growIcon"/>
-                <img src="{% static 'img/solutionImg.png' %}" class="growIcon"/>
-                <img src="{% static 'img/growthicon.png' %}" class="growIcon"/>
-            </div>
+        <div class="space-y-3 text-left">
+          <h4 class="text-lg font-bold text-white group-hover:text-amber-400 transition-colors">Bespoke UI/UX Design</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            High-fidelity clickable Figma designs, custom interfaces, specialized conversion rate architectures (CRO), and seamless transitions.
+          </p>
+          <span class="inline-flex items-center text-xs text-amber-500 font-bold uppercase tracking-widest pt-2">
+            Explore Creative Stack <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </span>
         </div>
-        <div class="consultationContainer">
-            <a href="" class="freeConsultation">Click to call<br/>
-                for a free<br/> consultation.</a>
+      </a>
+
+      <!-- Card: Web Development -->
+      <a href="{% url 'development' %}" class="group bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-start hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-2xl flex-shrink-0">
+          <i class="fa-solid fa-terminal"></i>
         </div>
-    </section>
-    <section class="blogsSectionContainer">
-        <h1 class="blogTitle">Blogs</h1>
-        <div class="blogsContainer">
-            <div class="blogPost">
-                <div class="blogImgContainer">
-                    <img src="{% static 'img/designicon.png' %}" class="blogImg"/>
-                </div>
-                <div class="blogTextContainer">
-                    <p class="blogText">The Art and Science of Web Design: Why Romsites is Your Go-To Solution!<a href="{% url 'design' %}" class="readMore">Read More</a></p>
-                </div>
-            </div>
-            <div class="blogPost">
-                <div class="blogImgContainer">
-                    <img src="{% static 'img/developmenticon.png' %}" class="blogImg"/>
-                </div>
-                <div class="blogTextContainer">
-                    <p class="blogText">Web Development: Building High-Performance Websites with Romsites.<a href="{% url 'development' %}" class="readMore">Read More</a></p>     
-                </div>
-            </div>
-            <div class="blogPost">
-                <div class="blogImgContainer">
-                    <img src="{% static 'img/seoicon.png' %}" class="blogImg"/>
-                </div>
-                <div class="blogTextContainer">
-                    <p class="blogText">SEO: How Romsites Optimizes Your Online Presence<a href="{% url 'seo' %}" class="readMore">Read More</a></p>
-                </div>
-            </div>
-            <div class="blogPost">
-                <div class="blogImgContainer">
-                    <img src="{% static 'img/maintenanceicon.png' %}" class="blogImg"/>
-                </div>
-                <div class="blogTextContainer">
-                    <p class="blogText">Website Maintenance: Ensuring Your Website's Peak Performance with Romsites<a href="{% url 'maintenance' %}" class="readMore">Read More</a></p>
-                </div>
-            </div>
+        <div class="space-y-3 text-left">
+          <h4 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Full-Stack Development</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Scalable custom databases (SQLite/PostgreSQL), secure API gateway protocols, ultra-fast server-side logic, and robust Django deployments.
+          </p>
+          <span class="inline-flex items-center text-xs text-blue-400 font-bold uppercase tracking-widest pt-2">
+            Explore Engine Details <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </span>
         </div>
-    </section>
+      </a>
+
+      <!-- Card: SEO -->
+      <a href="{% url 'seo' %}" class="group bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-start hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl flex-shrink-0">
+          <i class="fa-solid fa-search"></i>
+        </div>
+        <div class="space-y-3 text-left">
+          <h4 class="text-lg font-bold text-white group-hover:text-purple-400 transition-colors">Search Optimization (SEO)</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Geo-targeted local search setups, search console schema markup integrations, technical crawl index fixes, and performance score optimization.
+          </p>
+          <span class="inline-flex items-center text-xs text-purple-400 font-bold uppercase tracking-widest pt-2">
+            Explore Crawl Strategies <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </span>
+        </div>
+      </a>
+
+      <!-- Card: Maintenance -->
+      <a href="{% url 'maintenance' %}" class="group bg-slate-900 border border-slate-800 p-6 sm:p-8 rounded-2xl flex flex-col md:flex-row gap-6 items-start hover:border-slate-700 transition-all">
+        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl flex-shrink-0">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div class="space-y-3 text-left">
+          <h4 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">Security Maintenance</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Weekly security audits, continuous vulnerability patches, relational database migrations, and performance speed maintenance.
+          </p>
+          <span class="inline-flex items-center text-xs text-emerald-400 font-bold uppercase tracking-widest pt-2">
+            Explore System Uptime <i class="fa-solid fa-arrow-right-long ml-2"></i>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE SECTION 2: ROMSITES Dynamic Pricing Estimator Widget (Highly Professional Conversion Tool) -->
+  <section class="mb-24 scroll-mt-24" id="estimator">
+    <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-12 shadow-2xl overflow-hidden">
+      <!-- Glow element -->
+      <div class="absolute -top-12 -left-12 w-48 h-48 rounded-full bg-primary-500/10 blur-[80px] pointer-events-none select-none"></div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+        <!-- left content explanation -->
+        <div class="lg:col-span-5 space-y-6 text-left">
+          <span class="text-xs font-bold uppercase text-amber-500 tracking-widest flex items-center leading-none">
+            <span class="h-2 w-2 rounded-full bg-amber-400 mr-2"></span>
+            Real-Time Calculators
+          </span>
+          <h3 class="text-3xl font-extrabold text-white">Dynamic Project Pricing Blueprint</h3>
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+            Forget obscure and arbitrary proposals. Select your requested digital parameters below and calculate your estimated budget scope and monthly maintenance costs instantly.
+          </p>
+          <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800/60 space-y-2">
+            <div class="text-[10px] uppercase font-bold text-slate-500 tracking-wider">ROMSITES Performance Advantage</div>
+            <p class="text-[11px] text-slate-400 leading-normal">
+              ROMSITES includes pristine page speed setups and standard local schema SEO in every single deployment, saving you upwards of <strong>$1,500/year</strong> in hidden optimization fees!
+            </p>
+          </div>
+        </div>
+
+        <!-- right Pricing Calculator Form with Active JS calculation -->
+        <div class="lg:col-span-7 bg-slate-950/60 border border-slate-850 p-6 rounded-2xl select-none">
+          <div class="space-y-6">
+            
+            <!-- Scope selection -->
+            <div class="space-y-2 text-left">
+              <label class="text-xs font-bold uppercase text-slate-300">Project Type & Scales</label>
+              <div class="grid grid-cols-3 gap-3">
+                <button onclick="selectScale('basic', 1400, 99)" id="btn-scale-basic" class="p-3 border border-slate-850 hover:bg-slate-900 text-center rounded-xl transition-all outline-none">
+                  <span class="block text-sm font-extrabold text-white">Landing Page</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">1 Page (React SPA)</span>
+                </button>
+                <button onclick="selectScale('standard', 2800, 149)" id="btn-scale-standard" class="p-3 border border-primary-500/40 bg-primary-950/20 text-center rounded-xl transition-all outline-none">
+                  <span class="block text-sm font-extrabold text-white">Standard Service</span>
+                  <span class="block text-[10px] text-slate-350 font-semibold">5-7 Pages (React & Django)</span>
+                </button>
+                <button onclick="selectScale('custom', 4800, 249)" id="btn-scale-custom" class="p-3 border border-slate-850 hover:bg-slate-900 text-center rounded-xl transition-all outline-none">
+                  <span class="block text-sm font-extrabold text-white">Full Platform</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">React + Django API + DB</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Features Selection Checkboxes -->
+            <div class="space-y-2 text-left">
+              <label class="text-xs font-bold uppercase text-slate-300">Requested Custom Add-Ons</label>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                
+                <label class="flex items-center space-x-3 p-3 bg-slate-900/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-900 transition-colors">
+                  <input type="checkbox" id="add-seo" onchange="recalculateCost()" class="rounded bg-slate-950 border-slate-850 text-primary-500 focus:ring-primary-500 h-4 w-4">
+                  <div class="text-left leading-tight">
+                    <span class="block text-xs font-bold text-slate-200">SEO Schema Structured Marketing</span>
+                    <span class="block text-[9px] text-slate-500 font-semibold">React client helmet & server-rendered Django metadata (+$600)</span>
+                  </div>
+                </label>
+
+                <label class="flex items-center space-x-3 p-3 bg-slate-900/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-900 transition-colors">
+                  <input type="checkbox" id="add-db" onchange="recalculateCost()" class="rounded bg-slate-950 border-slate-850 text-primary-500 focus:ring-primary-500 h-4 w-4">
+                  <div class="text-left leading-tight">
+                    <span class="block text-xs font-bold text-slate-200">Invoice System & Portal</span>
+                    <span class="block text-[9px] text-slate-500 font-semibold">Interactive React dashboard with secure Django DB back-end (+$1,200)</span>
+                  </div>
+                </label>
+
+                <label class="flex items-center space-x-3 p-3 bg-slate-900/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-900 transition-colors">
+                  <input type="checkbox" id="add-ecommerce" onchange="recalculateCost()" class="rounded bg-slate-950 border-slate-850 text-primary-500 focus:ring-primary-500 h-4 w-4">
+                  <div class="text-left leading-tight">
+                    <span class="block text-xs font-bold text-slate-200">Secure Payment Checkout</span>
+                    <span class="block text-[9px] text-slate-500 font-semibold">Stripe integrated with JWT security or Django session locks (+$900)</span>
+                  </div>
+                </label>
+
+                <label class="flex items-center space-x-3 p-3 bg-slate-900/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-900 transition-colors">
+                  <input type="checkbox" id="add-forms" onchange="recalculateCost()" class="rounded bg-slate-950 border-slate-850 text-primary-500 focus:ring-primary-500 h-4 w-4">
+                  <div class="text-left leading-tight">
+                    <span class="block text-xs font-bold text-slate-200">Custom Lead Inquiries</span>
+                    <span class="block text-[9px] text-slate-500 font-semibold">Django system alerts mapped with Twilio / SendGrid APIs (+$350)</span>
+                  </div>
+                </label>
+
+              </div>
+            </div>
+
+            <!-- Dynamic Outputs Displays -->
+            <div class="grid grid-cols-2 gap-4 bg-slate-950 border border-slate-850 p-4 rounded-xl text-center">
+              <div>
+                <span class="block text-[9px] uppercase text-slate-500 font-extrabold tracking-widest">Est. Build Price</span>
+                <span id="price-build" class="block text-2xl font-black text-amber-400">$2,800</span>
+              </div>
+              <div>
+                <span class="block text-[9px] uppercase text-slate-500 font-extrabold tracking-widest">Continuous Uptime Support</span>
+                <span id="price-support" class="block text-2xl font-black text-white">$149<span class="text-xs font-semibold text-slate-500">/mo</span></span>
+              </div>
+            </div>
+
+            <!-- Quick Inquiry Buttons -->
+            <div class="flex gap-4">
+              <a href="tel:317-740-5279" class="flex-1 px-4 py-3 bg-gradient-to-r from-emerald-500 to-green-600 rounded-xl hover:scale-[1.01] transition-transform duration-200 text-center text-xs font-bold uppercase tracking-wider text-slate-950 select-none">
+                <i class="fa-solid fa-phone mr-1"></i> Quick Project Call
+              </a>
+              <a href="mailto:romsitesllc@gmail.com?subject=ROMSITES Project Pricing Inquiry" class="flex-1 px-4 py-3 border border-slate-800 rounded-xl hover:bg-slate-900 transition-colors text-center text-xs font-bold uppercase tracking-wider text-slate-350 select-none">
+                Submit Budget Plan
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Consultation Block ("Build & Grow Together") -->
+  <section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-stretch mb-24 relative z-10 scroll-mt-24" id="consultation">
+    
+    <!-- left card displaying phone support and consulting hours -->
+    <div class="md:col-span-7 bg-slate-900 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between space-y-6 text-left">
+      <div class="space-y-4">
+        <h3 class="text-2xl font-extrabold text-white leading-tight">We Build & Grow Web Solutions Together!</h3>
+        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+          Need web development consulting to review your product idea, map dynamic React frontend + Django/Python API backend database requirements, or run performance speed metrics? Speak directly with our lead system architect.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 border-t border-slate-800/80 pt-6">
+        <div class="flex flex-col items-center p-3 rounded-xl bg-slate-950 border border-slate-850/60">
+          <i class="fa-solid fa-cloud-arrow-up text-blue-500 text-lg mb-1"></i>
+          <span class="text-[9px] uppercase font-bold text-slate-500 tracking-wider">Cloud Native</span>
+        </div>
+        <div class="flex flex-col items-center p-3 rounded-xl bg-slate-950 border border-slate-850/60">
+          <i class="fa-solid fa-database text-amber-500 text-lg mb-1"></i>
+          <span class="text-[9px] uppercase font-bold text-slate-500 tracking-wider">Database Ready</span>
+        </div>
+        <div class="flex flex-col items-center p-3 rounded-xl bg-slate-950 border border-slate-850/60">
+          <i class="fa-solid fa-chart-line text-purple-500 text-lg mb-1"></i>
+          <span class="text-[9px] uppercase font-bold text-slate-500 tracking-wider">Organic SEO</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- right clickable direct consult layout -->
+    <div class="md:col-span-5 bg-gradient-to-tr from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-550 rounded-2xl flex flex-col justify-between items-stretch p-8 transition-all duration-300 shadow-xl shadow-amber-500/10 text-slate-950 group">
+      <div class="text-left space-y-2">
+        <span class="text-[9px] font-extrabold uppercase tracking-widest text-amber-950 leading-none">Free Consultations</span>
+        <h3 class="text-2xl font-black uppercase tracking-tight leading-none pt-1">
+          Click To Call <br class="hidden sm:block"/>
+          For A Free <br class="hidden sm:block" />
+          Consultation.
+        </h3>
+      </div>
+
+      <div class="py-8 text-left font-mono">
+        <div class="text-xl font-bold tracking-tight text-slate-950/90 hover:scale-[1.01] transition-transform">
+          <i class="fa-solid fa-phone mr-1 text-slate-950/70"></i> 1-317-740-5279
+        </div>
+        <div class="text-[10px] text-slate-900 font-bold uppercase tracking-widest mt-1">Available Mon-Sat (8AM - 6PM EST)</div>
+      </div>
+
+      <a href="tel:317-740-5279" class="w-full bg-slate-950 hover:bg-slate-900 py-3 rounded-xl text-amber-400 font-bold text-xs uppercase tracking-wider text-center shadow-md select-none transition-transform group-hover:scale-[1.02]">
+        Call Now Direct
+      </a>
+    </div>
+
+  </section>
+
+  <!-- SECTION 4: Interactive Blog segment -->
+  <section id="blogs">
+    <div class="text-center space-y-3 mb-12">
+      <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest">Industry Articles</h2>
+      <h3 class="text-2xl font-extrabold text-white">The ROMSITES Intelligence Blog</h3>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Blog 1 -->
+      <a href="{% url 'design' %}" class="group block bg-slate-900/50 border border-slate-800/60 rounded-xl p-5 hover:border-amber-500/40 transition-colors text-left space-y-2">
+        <div class="text-[10px] font-bold uppercase text-amber-500 tracking-widest">Design Strategy</div>
+        <h4 class="text-base font-bold text-white group-hover:text-amber-400 transition-colors">The Art and Science of Web Design: Why Romsites is Your Go-To Solution!</h4>
+        <p class="text-xs text-slate-400 line-clamp-2">Learn why premium custom interface wireframes made in Figma drive three times more leads than basic website builders.</p>
+        <span class="block text-xs font-semibold text-slate-500 group-hover:text-amber-500 transition-colors">Read Article <i class="fa-solid fa-arrow-right-long text-xs pl-1"></i></span>
+      </a>
+
+      <!-- Blog 2 -->
+      <a href="{% url 'development' %}" class="group block bg-slate-900/50 border border-slate-800/60 rounded-xl p-5 hover:border-blue-500/40 transition-colors text-left space-y-2">
+        <div class="text-[10px] font-bold uppercase text-blue-400 tracking-widest">Web Engineering</div>
+        <h4 class="text-base font-bold text-white group-hover:text-blue-400 transition-colors">Web Development: Building High-Performance Websites with Romsites.</h4>
+        <p class="text-xs text-slate-400 line-clamp-2">A technical walkthrough of why relational database index caches, secure framework sessions, and clean styles supercharge user conversions.</p>
+        <span class="block text-xs font-semibold text-slate-500 group-hover:text-blue-400 transition-colors">Read Article <i class="fa-solid fa-arrow-right-long text-xs pl-1"></i></span>
+      </a>
+
+      <!-- Blog 3 -->
+      <a href="{% url 'seo' %}" class="group block bg-slate-900/50 border border-slate-800/60 rounded-xl p-5 hover:border-purple-500/40 transition-colors text-left space-y-2">
+        <div class="text-[10px] font-bold uppercase text-purple-400 tracking-widest">Local Marketing</div>
+        <h4 class="text-base font-bold text-white group-hover:text-purple-400 transition-colors">SEO: How Romsites Optimizes Your Online Presence</h4>
+        <p class="text-xs text-slate-400 line-clamp-2">How technical keywords, metadata schema optimizations, and high-performance links land local services #1 on search results.</p>
+        <span class="block text-xs font-semibold text-slate-500 group-hover:text-purple-400 transition-colors">Read Article <i class="fa-solid fa-arrow-right-long text-xs pl-1"></i></span>
+      </a>
+
+      <!-- Blog 4 -->
+      <a href="{% url 'maintenance' %}" class="group block bg-slate-900/50 border border-slate-800/60 rounded-xl p-5 hover:border-emerald-500/40 transition-colors text-left space-y-2">
+        <div class="text-[10px] font-bold uppercase text-emerald-400 tracking-widest">Continuous Support</div>
+        <h4 class="text-base font-bold text-white group-hover:text-emerald-400 transition-colors">Website Maintenance: Ensuring Your Website's Peak Performance with Romsites</h4>
+        <p class="text-xs text-slate-400 line-clamp-2">How continuous security patches, vulnerability alerts, backups, and database health audits save you from high-priced emergency fixes.</p>
+        <span class="block text-xs font-semibold text-slate-500 group-hover:text-emerald-400 transition-colors">Read Article <i class="fa-solid fa-arrow-right-long text-xs pl-1"></i></span>
+      </a>
+
+    </div>
+  </section>
+
 </div>
 
-{% endblock %}
+<!-- Active pricing script logic for the estimator widget -->
+<script>
+  let currentBase = 2800;
+  let currentSupport = 149;
+  
+  function selectScale(scale, basePrice, supportPrice) {
+    currentBase = basePrice;
+    currentSupport = supportPrice;
+    
+    // Reset btn styles
+    ['basic', 'standard', 'custom'].forEach(s => {
+      const el = document.getElementById('btn-scale-' + s);
+      if (el) {
+        el.className = "p-3 border border-slate-850 hover:bg-slate-900 text-center rounded-xl transition-all outline-none";
+      }
+    });
+    
+    // Style active button
+    const activeBtn = document.getElementById('btn-scale-' + scale);
+    if (activeBtn) {
+      activeBtn.className = "p-3 border border-primary-500/40 bg-primary-950/20 text-center rounded-xl transition-all outline-none";
+    }
+    
+    recalculateCost();
+  }
 
-</body>
-</html>
+  function recalculateCost() {
+    let finalBase = currentBase;
+    
+    const isSeo = document.getElementById('add-seo').checked;
+    const isDb = document.getElementById('add-db').checked;
+    const isEcommerce = document.getElementById('add-ecommerce').checked;
+    const isForms = document.getElementById('add-forms').checked;
+    
+    if (isSeo) finalBase += 600;
+    if (isDb) finalBase += 1200;
+    if (isEcommerce) finalBase += 900;
+    if (isForms) finalBase += 350;
+    
+    // Render dynamic outputs
+    document.getElementById('price-build').innerText = '$' + finalBase.toLocaleString();
+    document.getElementById('price-support').innerHTML = '$' + currentSupport + '<span class="text-xs font-semibold text-slate-500">/mo</span>';
+  }
+  
+  // Trigger initial calculation
+  document.addEventListener('DOMContentLoaded', recalculateCost);
+</script>
+{% endblock %}

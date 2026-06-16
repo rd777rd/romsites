@@ -1,85 +1,346 @@
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
+
 {% block content %}
-<div class="pageContainer">
-    <section class="serviceBlogContainer">
-        <h1 class="blogsTitle">Web Design</h1>
-        <p class="blogsText">
-            In today's digital age, a well-designed website is the cornerstone of any successful business. It's not just about having a visually appealing site; it's about creating an experience that resonates with your audience, drives engagement, and converts visitors into loyal customers. At Romsites, we pride ourselves on our ability to merge the art and science of web design to deliver exceptional results for our clients.
-            <br/>
-Web design is much more than just aesthetics. It's about creating a user experience that is intuitive, engaging, and aligned with your business goals. A well-designed website can enhance user experience, boost credibility, improve SEO rankings, and drive conversions. A clean, easy-to-navigate site ensures that users can find what they're looking for quickly and effortlessly. A professional, polished website instills trust and confidence in your audience. Search engines favor well-structured, mobile-friendly sites, helping you climb the rankings and attract more organic traffic. Thoughtfully placed calls-to-action and an optimized user journey can significantly increase your conversion rates.
-<br/>
-At Romsites, we understand that every business is unique, and so are its web design needs. Our approach is tailored to deliver bespoke solutions that align with your brand identity and business objectives. Our process begins with a deep dive into your business, target audience, and goals. We take the time to understand what makes your business tick and what your customers are looking for. This foundational understanding guides our entire design process.
-<br/>
-Using industry-leading tools like Figma, we create visually stunning and user-friendly designs that capture the essence of your brand. Our designers focus on creating layouts that are not only beautiful but also functional, ensuring a seamless user experience across all devices. Our proficient web development team, skilled in HTML, CSS, JavaScript, React.js, Django, and ASP.NET, turns these designs into fully functional websites. We prioritize performance, security, and scalability, ensuring your site can grow with your business.
-<br/>
-A great website is one that can be found. Our SEO experts work on optimizing your site's structure, content, and performance to ensure it ranks high on search engine results pages. From keyword research to on-page optimization, we cover all aspects to boost your visibility. The digital landscape is ever-evolving, and so should your website. Our website maintenance services ensure your site remains up-to-date, secure, and performing at its best. We regularly update your site with new features, security patches, and optimizations to keep it running smoothly.
-<br/>
-Romsites is more than just a web design company; we are your partners in digital success. Our commitment to excellence, combined with our expertise in cutting-edge technologies, ensures that we deliver top-notch web solutions tailored to your business needs. Whether you're looking to create a new website or revamp an existing one, Romsites is here to help you every step of the way. Elevate your online presence with Romsites' exceptional web design services. Let us help you create a website that not only looks great but also drives results.
-            </p>
-    </section>
-    <section class="processContainer">
-        <h1 class="processTitle">Our Process</h1>
-        <div class="stepIconsContainer">
-            <div class="stepIcon">
-                <p class="stepNumber">1</p>
-                <p class="stepText">Discovery</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">2</p>
-                <p class="stepText">Wireframing</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">3</p>
-                <p class="stepText">Design</p>
-            </div>
-            <div class="stepIcon">
-                <p class="stepNumber">4</p>
-                <p class="stepText">Handoff</p>
-            </div>
+<div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 z-10">
+
+  <!-- Core blog content -->
+  <article class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative mb-16 animate-fade-in text-left">
+    <div class="space-y-4">
+      <div class="inline-flex items-center space-x-2 bg-amber-400/10 border border-amber-500/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-amber-500">
+        <i class="fa-solid fa-palette"></i> Creative Service Detail
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+        The Art and Science of Premium Web Design
+      </h1>
+
+      <!-- Metadata -->
+      <div class="flex items-center space-x-6 text-xs font-mono text-slate-500 border-b border-slate-800 pb-4 pt-1">
+        <span>Published: June 2026</span>
+        <span>Author: ROMSITES Lead Designer</span>
+        <span>Read Time: 5 min</span>
+      </div>
+
+      <!-- Long-form text content styled beautifully -->
+      <div class="text-xs sm:text-sm text-slate-400 leading-relaxed space-y-4 pt-4">
+        <p>In today's digital age, a well-designed website is the absolute cornerstone of any high-growth business. It's not just about having a visually appealing site; it's about creating an interactive experience that aligns with your brand, builds absolute credibility, and guides visitors along a seamless, high-probability conversion path.</p>
+        
+        <p>A professional layout tells local prospects that you are an established, elite solution provider. Search engine algorithms also favor clean, mobile-optimized structures, which directly helps you climb rankings in competitive cities. Study shows that websites optimized with generous negative space and solid typographic hierarchies score up to <strong>300% more contact submissions</strong> than outdated template websites.</p>
+
+        <p class="border-l-2 border-amber-500 pl-4 py-1 italic font-medium text-slate-300 bg-amber-500/5 rounded-r">
+          "Design is not just what it looks like and feels like. Design is how it works." — We apply this philosophy to every pixel, utilizing Figma to draft high-fidelity prototypes optimized for React front-ends before a single line of Django backend database logic is compiled.
+        </p>
+
+        <p>At ROMSITES, we dive deep into your brand identity, competitive market landscape, and customer pipelines to establish a bespoke blueprint. We prioritize fast loading architectures, lightweight responsive CSS rules, and structured grids that guarantee immediate mobile comprehension. Explore our proven design methodology below.</p>
+      </div>
+    </div>
+  </article>
+
+  <!-- Process block -->
+  <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-xl text-center mb-16">
+    <h2 class="text-xs font-extrabold uppercase text-amber-500 tracking-widest mb-2">Our Process</h2>
+    <h3 class="text-2xl font-extrabold text-white mb-10">Bespoke UI Design Lifecycle</h3>
+
+    <!-- Step horizontal grid -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10 relative">
+      
+      <!-- Step 1 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-amber-500 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-amber-500/40 transition-colors">
+          1
         </div>
-        <p class="processDescription">The first step in our web design process is Discovery and Research. We begin by understanding your business, target audience, and goals. This involves in-depth discussions and research to gather all necessary information and inspiration.
-            <br/>
-            Next, we move on to Wireframing and Prototyping. We create wireframes and prototypes using tools like Figma to visualize the layout and structure of your website. This phase includes feedback and revisions to ensure alignment with your vision.
-            <br/>
-            The third step is Design Execution. Our designers craft high-fidelity designs, focusing on aesthetics, user experience, and responsiveness. This step includes multiple iterations and refinements based on your input.
-            <br/>
-            Finally, we proceed with Approval and Handoff. Once the design is finalized and approved, we prepare all design assets for handoff to the development team, ensuring a seamless transition.</p>
-    </section>    
-    <section class="hireButtonsContainer">
-        <div class="hireButtonContainer">
-            <a href="tel:317-740-5279" class="hireButton">Hire Us</a>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Discovery</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Investigating target competitors, keywords, and client objectives.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-amber-500 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-amber-500/40 transition-colors">
+          2
         </div>
-        <div class="hireButtonContainer">
-            <a href="mailto:roman.drake.7@gmail.com" class="hireButton">Free Consultation</a>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Wireframing</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Structuring the navigation and functional page layout outlines.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-amber-500 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-amber-500/40 transition-colors">
+          3
         </div>
-    </section>
-    <section class="otherServicesContainer">
-        <h1 class="otherServiceTitle">Other Services</h1>
-        <div class="otherServiceButtonsContainer">
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'development' %}" class="otherServiceButton">Web Development</a>
-            </div>
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'maintenance' %}" class="otherServiceButton">Website Mainetenance</a>
-            </div>
-            <div class=otherServiceButtonContainer>
-                <a href="{% url 'seo' %}" class="otherServiceButton">Search Engine Optimization</a>
-            </div>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Design</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Crafting interactive mockups, custom grids, and typography styling.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="space-y-3 relative group">
+        <div class="w-16 h-16 rounded-full bg-slate-950 border border-slate-800 text-amber-500 flex items-center justify-center text-xl font-bold mx-auto shadow-lg relative group-hover:border-amber-500/40 transition-colors">
+          4
         </div>
-    </section>
+        <h4 class="text-sm font-bold text-white uppercase tracking-wider">Handoff</h4>
+        <p class="text-[10px] text-slate-500 leading-normal max-w-[150px] mx-auto">Preparing design vector assets for backend compilation.</p>
+      </div>
+
+    </div>
+
+    <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto leading-relaxed border-t border-slate-800/80 pt-6">
+      Our process ensures complete visibility. We host active feedback loop phases at every milestone, giving you detailed previews before building the live platform on the database framework.
+    </p>
+  </section>
+
+  <!-- DESIGN QUOTE CALCULATOR MODULE -->
+  <section id="design-quote-calculator" class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl relative mb-16 text-left">
+    <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-amber-500/10 blur-[80px] pointer-events-none select-none"></div>
+    <div class="space-y-4">
+      <div class="inline-flex items-center space-x-2 bg-amber-400/10 border border-amber-500/20 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-amber-500">
+        <i class="fa-solid fa-calculator"></i> Design Budget Builder
+      </div>
+
+      <h3 class="text-2xl font-extrabold text-white leading-tight">
+        Estimate Your Premium UI/UX Project
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-400">
+        Adjust the selectors below to model your custom design requirements and map a fair, mid-level pricing estimate instantly.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <!-- Attributes selectors -->
+        <div class="space-y-6">
+          <!-- Page Select -->
+          <div class="space-y-2">
+            <label for="design-pages" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Project Screens & Scope</label>
+            <select id="design-pages" onchange="calculateDesignQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-amber-500/60 focus:ring-1 focus:ring-amber-500 outline-none transition-all cursor-pointer">
+              <option value="800" data-label="1 Page (Premium Landing)" selected>1 Page (Premium Landing) — $800</option>
+              <option value="1800" data-label="2-5 Pages (Standard Service Outline)">2-5 Pages (Standard Service Outline) — $1,800</option>
+              <option value="3200" data-label="6-10 Pages (Comprehensive Portal)">6-10 Pages (Comprehensive Portal) — $3,200</option>
+              <option value="5400" data-label="11+ Pages (Enterprise Product Screens)">11+ Pages (Enterprise Product Screens) — $5,400</option>
+            </select>
+          </div>
+
+          <!-- Addons grid -->
+          <div class="space-y-2">
+            <label class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Advanced Creative Deliverables</label>
+            <div class="space-y-3">
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-design-figma" onchange="calculateDesignQuote()" class="rounded bg-slate-950 border-slate-800 text-amber-500 focus:ring-amber-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">Interactive Figma Prototypes</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Clickable layout flow mimicking live codes (+$300)</span>
+                </div>
+              </label>
+
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-design-illustrations" onchange="calculateDesignQuote()" class="rounded bg-slate-950 border-slate-800 text-amber-500 focus:ring-amber-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">Custom Vector Asset Packages</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Bespoke illustrations and high-contrast icons (+$400)</span>
+                </div>
+              </label>
+
+              <label class="flex items-center space-x-3 p-3 bg-slate-950/40 rounded-xl border border-slate-850 cursor-pointer hover:bg-slate-950 transition-colors">
+                <input type="checkbox" id="add-design-brand" onchange="calculateDesignQuote()" class="rounded bg-slate-950 border-slate-800 text-amber-500 focus:ring-amber-500 h-4 w-4">
+                <div class="text-left leading-tight">
+                  <span class="block text-xs font-bold text-slate-200">Brand Identity & Style Guides</span>
+                  <span class="block text-[10px] text-slate-500 font-semibold">Color pairing directives & elegant logo layout guidance (+$500)</span>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <!-- Personalized Customization Additions -->
+          <div class="border-t border-slate-850 pt-4 space-y-4">
+            <!-- Custom Incremental Screens -->
+            <div class="space-y-2">
+              <label for="design-custom-screens" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider flex justify-between">
+                <span>Personalized Additional Screens</span> 
+                <span id="custom-screens-val" class="font-mono text-amber-500 font-black">+0 screens</span>
+              </label>
+              <div class="flex items-center space-x-4">
+                <input type="range" id="design-custom-screens" min="0" max="15" value="0" oninput="calculateDesignQuote()" class="w-full accent-amber-500 bg-slate-950 border border-slate-800 h-2 rounded-lg cursor-pointer">
+                <span class="text-xs font-mono font-bold text-slate-500 whitespace-nowrap">+$100/ea</span>
+              </div>
+            </div>
+            
+            <!-- Brand Aesthetic Vibe Selection -->
+            <div class="space-y-2">
+              <label for="design-vibe" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Aesthetic Creative Vibe</label>
+              <select id="design-vibe" onchange="calculateDesignQuote()" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-bold focus:border-amber-500/60 focus:ring-1 focus:ring-amber-500 outline-none transition-all cursor-pointer">
+                <option value="Swiss Minimal & Modern" selected>Swiss Minimal & Modern (Clean Sans-Serif, High Contrast)</option>
+                <option value="Luxury & Editorial Elegant">Luxury & Editorial Elegant (Classic Serif, High-End Accentuation)</option>
+                <option value="Cyberpunk / Immersive Sci-Fi">Cyberpunk / Immersive Sci-Fi (Dark Slate, Electric Accents, Grid Elements)</option>
+                <option value="Playful, Organic & Warm">Playful, Organic & Warm (Gentle Rounded Borders, Retro Fonts)</option>
+              </select>
+            </div>
+
+            <!-- Design Vision / Custom specifications -->
+            <div class="space-y-2">
+              <label for="design-notes" class="block text-xs font-extrabold uppercase text-slate-350 tracking-wider">Custom Project Vision & Goals</label>
+              <textarea id="design-notes" oninput="calculateDesignQuote()" placeholder="e.g. Needs a dark mode, interactive stock graphs, or vintage typographic accents..." class="w-full min-h-[60px] max-h-[140px] px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 text-xs font-semibold focus:border-amber-500/60 focus:ring-1 focus:ring-amber-500 outline-none transition-all resize-none" rows="2"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Render visual estimation output -->
+        <div class="bg-slate-950/80 border border-slate-850 p-6 rounded-2xl flex flex-col justify-between h-full space-y-6">
+          <div class="space-y-4">
+            <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-500">ROMSITES Premium Estimation</span>
+            <div class="border-b border-slate-905 pb-4">
+              <span class="text-[9px] uppercase font-bold text-slate-500 font-mono">Estimated Investment</span>
+              <div id="design-display-price" class="text-4xl font-black text-white mt-1">$800</div>
+              <span class="text-[10px] font-semibold text-slate-400 block mt-1">One-time flat fee. Zero hidden surcharges.</span>
+            </div>
+            
+            <div class="space-y-2 text-xs text-slate-400">
+              <div class="flex justify-between">
+                <span>Setup Duration:</span>
+                <span id="design-display-duration" class="font-bold text-slate-200">7 to 14 Business Days</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Selected Vibe:</span>
+                <span id="design-display-vibe" class="font-bold text-amber-500">Swiss Minimal</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Total Scope Size:</span>
+                <span id="design-display-scope" class="font-bold text-slate-200">1 Page</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Handoff Deliverables:</span>
+                <span class="font-bold text-slate-200">Figma & Tailored CSS Assets</span>
+              </div>
+            </div>
+          </div>
+
+          <a id="design-quote-btn" href="mailto:romsitesllc@gmail.com?subject=ROMSITES UI Design Quote" class="w-full py-3.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-550 rounded-xl text-slate-950 text-xs font-bold uppercase tracking-wider text-center shadow-lg transition-transform block">
+            <i class="fa-regular fa-envelope mr-1"></i> Secure Approved Estimate
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function calculateDesignQuote() {
+      const selectEl = document.getElementById('design-pages');
+      const baseCost = parseInt(selectEl.value);
+      const label = selectEl.options[selectEl.selectedIndex].getAttribute('data-label');
+      
+      // Personalized additional screens
+      const customScreensInput = document.getElementById('design-custom-screens');
+      const customScreens = parseInt(customScreensInput.value) || 0;
+      document.getElementById('custom-screens-val').innerText = `+${customScreens} screen${customScreens === 1 ? '' : 's'}`;
+      const customScreensCost = customScreens * 100;
+
+      // Brand Vibe Value
+      const vibeEl = document.getElementById('design-vibe');
+      const selectedVibe = vibeEl.value;
+      document.getElementById('design-display-vibe').innerText = selectedVibe.split(' (')[0].split(' / ')[0];
+
+      // Custom project vision
+      const designNotes = document.getElementById('design-notes').value.trim();
+      
+      let addons = [];
+      let total = baseCost + customScreensCost;
+      
+      // Dynamic delivery duration calculation
+      let minDays = 4;
+      let maxDays = 6;
+      if (baseCost === 1800) {
+        minDays = 7;
+        maxDays = 11;
+      } else if (baseCost === 3200) {
+        minDays = 12;
+        maxDays = 18;
+      } else if (baseCost === 5400) {
+        minDays = 18;
+        maxDays = 25;
+      }
+      
+      // Additional screens logic
+      minDays += customScreens;
+      maxDays += Math.ceil(customScreens * 1.5);
+      
+      if (document.getElementById('add-design-figma').checked) {
+        total += 300;
+        addons.push("Interactive Figma Prototypes (+$300)");
+        minDays += 2;
+        maxDays += 3;
+      }
+      if (document.getElementById('add-design-illustrations').checked) {
+        total += 400;
+        addons.push("Custom Vector Asset Package (+$400)");
+        minDays += 2;
+        maxDays += 3;
+      }
+      if (document.getElementById('add-design-brand').checked) {
+        total += 500;
+        addons.push("Brand Identity & Style Guide (+$500)");
+        minDays += 3;
+        maxDays += 4;
+      }
+      
+      const finalDuration = `${minDays} to ${maxDays} Business Days`;
+      document.getElementById('design-display-duration').innerText = finalDuration;
+      document.getElementById('design-display-price').innerText = '$' + total.toLocaleString();
+      document.getElementById('design-display-scope').innerText = customScreens > 0 ? `${label.split(' — ')[0]} + ${customScreens} Extra` : label.split(' — ')[0];
+      
+      // Update Mailto Link
+      const emailRecipient = "romsitesllc@gmail.com";
+      const subject = encodeURIComponent("ROMSITES Custom UI/UX Design Quote Request");
+      
+      let bodyText = "Hi ROMSITES,\n\n";
+      bodyText += "I ran the custom UI/UX design quote builder on your platform and mapped my project criteria:\n\n";
+      bodyText += `- Project Scope: ${label}\n`;
+      bodyText += `- Selected Aesthetic Vibe: ${selectedVibe}\n`;
+      bodyText += `- Personalized Additional Screens: ${customScreens} (+$${customScreensCost})\n`;
+      bodyText += `- Selected Add-ons:\n`;
+      if (addons.length > 0) {
+        addons.forEach(item => {
+          bodyText += `  * ${item}\n`;
+        });
+      } else {
+        bodyText += "  * None selected\n";
+      }
+      
+      if (designNotes) {
+        bodyText += `\n- Personalized Style/Feature Notes:\n  "${designNotes}"\n`;
+      }
+      
+      bodyText += `\n- Dynamic Production Period: ${finalDuration}\n`;
+      bodyText += `- Total Mid-level Pricing Estimate: $${total.toLocaleString()}\n\n`;
+      bodyText += "Please reach out to schedule our free initial prototype study session.\n\nBest regards,\n[Your Name]";
+      
+      document.getElementById('design-quote-btn').href = "mailto:" + emailRecipient + "?subject=" + subject + "&body=" + encodeURIComponent(bodyText);
+    }
+    
+    // Run initial on mount
+    document.addEventListener('DOMContentLoaded', calculateDesignQuote);
+  </script>
+
+  <!-- Consultation & Action row -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-16">
+    <a href="tel:317-740-5279" class="p-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-550 rounded-xl text-slate-950 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2">
+      <i class="fa-solid fa-phone"></i> Direct Consultation Call
+    </a>
+    <a href="mailto:romsitesllc@gmail.com?subject=ROMSITES Design Inquiry" class="p-4 bg-slate-900 border border-slate-800 rounded-xl text-white hover:bg-slate-850 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-colors">
+      <i class="fa-regular fa-envelope"></i> Request Free Prototype Outline
+    </a>
+  </section>
+
+  <!-- Other capabilities links -->
+  <section class="bg-slate-900/40 border border-slate-900/80 p-6 rounded-2xl text-center">
+    <h3 class="text-xs font-extrabold uppercase text-slate-500 tracking-widest mb-4">Other Services</h3>
+    <div class="grid grid-cols-3 gap-3">
+      <a href="{% url 'development' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Web Development
+      </a>
+      <a href="{% url 'maintenance' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Maintenance
+      </a>
+      <a href="{% url 'seo' %}" class="p-3 border border-slate-850 hover:bg-slate-900 text-[10px] font-bold text-slate-400 hover:text-white uppercase tracking-wider rounded-lg transition-transform hover:-translate-y-px">
+        Local SEO Pack
+      </a>
+    </div>
+  </section>
+
 </div>
-
 {% endblock %}
-
-</body>
-</html>
