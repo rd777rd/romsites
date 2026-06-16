@@ -53,9 +53,113 @@
     <!-- Custom CSS variables compatibility -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+
+    <!-- Preloader Instant Core Stylesheet -->
+    <style id="romsites-preloader-css">
+      #romsites-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0B0F19;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+      }
+      #romsites-preloader.fade-out {
+        opacity: 0;
+        visibility: hidden;
+      }
+      @keyframes romsites-pulse {
+        0%, 100% {
+          transform: scale(1);
+          box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4), 0 8px 10px -6px rgba(79, 70, 229, 0.4);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 20px 35px -5px rgba(79, 70, 229, 0.6), 0 12px 16px -6px rgba(245, 158, 11, 0.4);
+        }
+      }
+      .preloader-logo-container {
+        animation: romsites-pulse 2s infinite ease-in-out;
+      }
+      @keyframes romsites-shimmer {
+        0% { left: -100%; }
+        100% { left: 100%; }
+      }
+      .preloader-shimmer-bar {
+        position: relative;
+        overflow: hidden;
+      }
+      .preloader-shimmer-bar::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.7), rgba(245, 158, 11, 0.7), transparent);
+        animation: romsites-shimmer 1.8s infinite linear;
+      }
+    </style>
   </head>
 
   <body class="bg-slate-950 text-slate-100 font-sans flex flex-col min-h-screen antialiased selection:bg-primary-500 selection:text-white">
+    <!-- Beautiful ROMSITES High-Performance Preloader Overlay (Solves Render free tier boot latency) -->
+    <div id="romsites-preloader">
+      <div class="flex flex-col items-center max-w-sm px-6 text-center">
+        <!-- Brand Logo Icon Group -->
+        <div class="preloader-logo-container w-20 h-20 rounded-2xl bg-gradient-to-tr from-primary-500 to-accent-400 flex items-center justify-center mb-6">
+          <svg class="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+        </div>
+        
+        <!-- Agency Brand Title -->
+        <h1 class="text-3xl font-black tracking-tight text-white mb-1.5 font-sans">
+          ROMSITES
+        </h1>
+        <p class="text-[10px] font-extrabold text-accent-400 uppercase tracking-widest leading-none mb-8">
+          Global Web &amp; Software Lab
+        </p>
+
+        <!-- Loading State indicator -->
+        <div class="w-48 h-[3px] bg-slate-900 rounded-full overflow-hidden preloader-shimmer-bar mb-3"></div>
+        <p class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">
+          Initializing App System...
+        </p>
+      </div>
+    </div>
+
+    <!-- Preloader Auto-TearDown script -->
+    <script>
+      (function() {
+        var preloader = document.getElementById('romsites-preloader');
+        
+        function hidePreloader() {
+          if (preloader && !preloader.classList.contains('fade-out')) {
+            preloader.classList.add('fade-out');
+            setTimeout(function() {
+              if (preloader && preloader.parentNode) {
+                preloader.parentNode.removeChild(preloader);
+              }
+            }, 600); // Wait for the transition to finish, then purge DOM element
+          }
+        }
+
+        // Fire on page load, but also set a safety trigger just in case slow assets delay load event
+        window.addEventListener('load', hidePreloader);
+        
+        // Safety timeout (maximum of 1.5 seconds) ensuring client never stalls on slower connections
+        setTimeout(hidePreloader, 1500);
+      })();
+    </script>
     <!-- Header -->
     {% include 'partials/_header.html' %}
     
