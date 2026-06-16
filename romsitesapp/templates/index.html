@@ -256,7 +256,7 @@
                   <span class="text-[10px] text-slate-500">Verified Client Partner</span>
                 </div>
                 <div class="flex items-center space-x-0.5">
-                  {% for i in [1, 2, 3, 4, 5] %}
+                  {% for i in stars_range %}
                     {% if i <= review.rating %}
                       <i class="fa-solid fa-star text-amber-400 text-xs text-amber-500"></i>
                     {% else %}

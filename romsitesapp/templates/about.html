@@ -97,7 +97,7 @@
               <div>
                 <h4 class="text-sm font-extrabold text-white">{{ reviews.0.name }}</h4>
                 <div class="flex items-center space-x-0.5 mt-1">
-                  {% for i in [1, 2, 3, 4, 5] %}
+                  {% for i in stars_range %}
                     {% if i <= reviews.0.rating %}
                       <i class="fa-solid fa-star text-amber-500 text-xs"></i>
                     {% else %}

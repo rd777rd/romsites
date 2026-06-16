@@ -19,7 +19,7 @@
       <div class="bg-slate-950 border border-slate-900 p-4 rounded-xl text-left text-xs leading-normal space-y-1.5 font-medium">
         <span class="block font-bold text-slate-350 flex justify-between">
           <span>Client: {{ review.name }}</span>
-          <span class="text-amber-500 font-mono text-[9px]">{% for i in [1,2,3,4,5] %}{% if i <= review.rating %}★{% endif %}{% endfor %}</span>
+          <span class="text-amber-500 font-mono text-[9px]">{% for i in stars_range %}{% if i <= review.rating %}★{% endif %}{% endfor %}</span>
         </span>
         <p class="text-slate-400 italic text-[11px] line-clamp-2">"{{ review.comment }}"</p>
       </div>
