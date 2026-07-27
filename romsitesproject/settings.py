@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # render.yaml already does this correctly (generateValue: true). There is no
 # hardcoded fallback checked into git. A throwaway key is only auto-generated
 # for local DEBUG development so the app still boots without extra setup.
-DEBUG = os.environ.get('DJANGO_DEBUG', 'False') == 'True'
+DEBUG = 'False'
 
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 if not SECRET_KEY:
