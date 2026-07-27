@@ -1,0 +1,8 @@
+/* responsive.css - Fine-tuned breakpoints for fluid responsive rendering */
+
+@media (max-width: 640px) {
+  /* Restrict outer padding scales */
+  main {
+    max-width: 100%;
+  }
+}

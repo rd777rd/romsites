@@ -1,0 +1,206 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>{% block title %}ROMSITES | Premium Custom React & Django Systems{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}ROMSITES is a premium full-stack development agency specializing in secure high-performance React frontends and robust Django (Python) backends for global clients.{% endblock %}" />
+    <meta name="keywords" content="django react web development, full-stack django developer, custom react apps, enterprise web applications, high performance web systems, romsites llc" />
+    <link rel="canonical" href="{% block canonical_url %}https://romsites.onrender.com{{ request.path }}{% endblock %}" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%234F46E5'/%3E%3Ctext x='12' y='17' font-size='13' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E" />
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:site_name" content="ROMSITES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{% block og_title %}ROMSITES | Premium Custom React & Django Systems{% endblock %}" />
+    <meta property="og:description" content="{% block og_description %}Premium full-stack development agency specializing in secure, high-performance React frontends and robust Django backends.{% endblock %}" />
+    <meta property="og:url" content="{{ request.build_absolute_uri }}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{% block twitter_title %}ROMSITES{% endblock %}" />
+    <meta name="twitter:description" content="{% block twitter_description %}Custom React & Django development, design, SEO, and ongoing maintenance.{% endblock %}" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+    <!-- Statically compiled utility CSS (generated from the exact classes this
+         site uses) replaces the Tailwind Play CDN runtime JIT compiler, which
+         is explicitly unsupported for production use and ships an entire
+         compiler to every visitor. No build step required to deploy. -->
+    <link rel="stylesheet" href="{% static 'css/compiled-tailwind.css' %}" />
+
+    <!-- Custom CSS variables compatibility -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}" />
+
+    <!-- Preloader Instant Core Stylesheet -->
+    <style id="romsites-preloader-css">
+      #romsites-preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0B0F19;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+      }
+      #romsites-preloader.fade-out {
+        opacity: 0;
+        visibility: hidden;
+      }
+      @keyframes romsites-pulse {
+        0%, 100% {
+          transform: scale(1);
+          box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.4), 0 8px 10px -6px rgba(79, 70, 229, 0.4);
+        }
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 20px 35px -5px rgba(79, 70, 229, 0.6), 0 12px 16px -6px rgba(245, 158, 11, 0.4);
+        }
+      }
+      .preloader-logo-container {
+        animation: romsites-pulse 2s infinite ease-in-out;
+      }
+      @keyframes romsites-shimmer {
+        0% { left: -100%; }
+        100% { left: 100%; }
+      }
+      .preloader-shimmer-bar {
+        position: relative;
+        overflow: hidden;
+      }
+      .preloader-shimmer-bar::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, rgba(79, 70, 229, 0.7), rgba(245, 158, 11, 0.7), transparent);
+        animation: romsites-shimmer 1.8s infinite linear;
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-950 text-slate-100 font-sans flex flex-col min-h-screen antialiased selection:bg-amber-500 selection:text-white">
+    <!-- Beautiful ROMSITES High-Performance Preloader Overlay (Solves Render free tier boot latency) -->
+    <div id="romsites-preloader">
+      <div class="flex flex-col items-center max-w-sm px-6 text-center">
+        <!-- Brand Logo Icon Group -->
+        <div class="preloader-logo-container w-20 h-20 rounded-2xl bg-gradient-to-tr from-amber-500 to-accent-400 flex items-center justify-center mb-6">
+          <svg class="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+        </div>
+        
+        <!-- Agency Brand Title -->
+        <h1 class="text-3xl font-black tracking-tight text-white mb-1.5 font-sans">
+          ROMSITES
+        </h1>
+        <p class="text-[10px] font-extrabold text-accent-400 uppercase tracking-widest leading-none mb-8">
+          Global Web &amp; Software Lab
+        </p>
+
+        <!-- Loading State indicator -->
+        <div class="w-48 h-[3px] bg-slate-900 rounded-full overflow-hidden preloader-shimmer-bar mb-3"></div>
+        <p class="text-[10px] font-mono text-slate-500 tracking-wider uppercase">
+          Initializing App System...
+        </p>
+      </div>
+    </div>
+
+    <!-- Preloader Auto-TearDown script -->
+    <script>
+      (function() {
+        var preloader = document.getElementById('romsites-preloader');
+        
+        function hidePreloader() {
+          if (preloader && !preloader.classList.contains('fade-out')) {
+            preloader.classList.add('fade-out');
+            setTimeout(function() {
+              if (preloader && preloader.parentNode) {
+                preloader.parentNode.removeChild(preloader);
+              }
+            }, 600); // Wait for the transition to finish, then purge DOM element
+          }
+        }
+
+        // Fire on page load, but also set a safety trigger just in case slow assets delay load event
+        window.addEventListener('load', hidePreloader);
+        
+        // Safety timeout (maximum of 1.5 seconds) ensuring client never stalls on slower connections
+        setTimeout(hidePreloader, 1500);
+      })();
+    </script>
+    <!-- Header -->
+    {% include 'partials/_header.html' %}
+    
+    <!-- Hero / Main content wrapper with stylish ambient backdrop glows -->
+    <main class="flex-grow relative overflow-hidden">
+      <!-- Ambient Glow Effects -->
+      <div class="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] rounded-full bg-amber-500/10 blur-[120px] pointer-events-none"></div>
+      <div class="absolute bottom-[20%] right-[-10%] w-[600px] h-[600px] rounded-full bg-accent-500/5 blur-[150px] pointer-events-none"></div>
+      
+       <!-- Block content --> 
+        {% if messages %}
+          <div class="max-w-3xl mx-auto px-4 pt-6 space-y-3 relative z-10">
+            {% for message in messages %}
+              <div class="bg-amber-500/10 border border-amber-500/20 text-amber-300 text-sm font-semibold px-4 py-3 rounded-xl">
+                {{ message }}
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    {% include 'partials/_footer.html' %}
+
+    <!-- Mobile Navigation Toggle Script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
+        const overlay = document.querySelector('.overlay');
+        
+        if (toggleBtn && dropDownMenu) {
+          toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('hidden');
+            dropDownMenu.classList.toggle('flex');
+            if (overlay) overlay.classList.toggle('hidden');
+            
+            const isClosed = dropDownMenu.classList.contains('hidden');
+            toggleBtnIcon.className = isClosed ? 'fa-solid fa-bars text-2xl transition-all' : 'fa-solid fa-xmark text-4xl text-amber-500 transition-all';
+          };
+          
+          if (overlay) {
+            overlay.onclick = function() {
+              dropDownMenu.classList.add('hidden');
+              dropDownMenu.classList.remove('flex');
+              overlay.classList.add('hidden');
+              toggleBtnIcon.className = 'fa-solid fa-bars text-2xl transition-all';
+            };
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+# Render Infrastructure as Code (Blueprint Specification)
+# Learn more at https://render.com/docs/blueprints
+#
+# NOTE (see audit): this file previously also declared a second Node/Express
+# service pointing at a leftover React/Vite scaffold that isn't the real
+# site. That's been removed -- the Django service below is the only real
+# deployment target for ROMSITES.
+services:
+  - type: web
+    name: romsites-django-service
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate
+    startCommand: gunicorn romsitesproject.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.8
+      - key: DJANGO_SETTINGS_MODULE
+        value: romsitesproject.settings
+      - key: DJANGO_DEBUG
+        value: False
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: romsites.onrender.com

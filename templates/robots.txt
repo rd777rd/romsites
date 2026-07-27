@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /delete-review/
+Disallow: /approve-review/
+
+Sitemap: https://romsites.onrender.com/sitemap.xml
